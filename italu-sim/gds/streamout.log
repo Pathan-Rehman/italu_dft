@@ -1,0 +1,355 @@
+
+Magic 8.3 revision 678 - Compiled on Mon Jul 27 03:07:22 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Loading "streamout.tcl" from command line.
+Don't know how to read GDS-II:
+Nothing in "cifinput" section of tech file.
+Reading LEF data from file /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef.
+This action cannot be undone.
+LEF read, Line 342 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 342 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 343 (Error): No layer defined for RECT.
+LEF read, Line 344 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 344 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 345 (Error): No layer defined for RECT.
+LEF read, Line 346 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 346 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 347 (Error): No layer defined for RECT.
+LEF read, Line 353 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 353 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 354 (Error): No layer defined for RECT.
+LEF read, Line 355 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 355 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 356 (Error): No layer defined for RECT.
+LEF read, Line 357 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 357 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 358 (Error): No layer defined for RECT.
+LEF read, Line 363 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 363 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 364 (Error): No layer defined for RECT.
+LEF read, Line 365 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 365 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 366 (Error): No layer defined for RECT.
+LEF read, Line 367 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 367 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 368 (Error): No layer defined for RECT.
+LEF read, Line 373 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 373 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 374 (Error): No layer defined for RECT.
+LEF read, Line 375 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 375 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 376 (Error): No layer defined for RECT.
+LEF read, Line 377 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 377 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 378 (Error): No layer defined for RECT.
+LEF read, Line 383 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 383 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 384 (Error): No layer defined for RECT.
+LEF read, Line 385 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 385 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 386 (Error): No layer defined for RECT.
+LEF read, Line 387 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 387 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 388 (Error): No layer defined for RECT.
+LEF read, Line 393 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 393 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 394 (Error): No layer defined for RECT.
+LEF read, Line 395 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 395 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 396 (Error): No layer defined for RECT.
+LEF read, Line 397 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 397 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 398 (Error): No layer defined for RECT.
+LEF read, Line 403 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 403 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 404 (Error): No layer defined for RECT.
+LEF read, Line 405 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 405 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 406 (Error): No layer defined for RECT.
+LEF read, Line 407 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 407 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 408 (Error): No layer defined for RECT.
+LEF read, Line 413 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 413 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 414 (Error): No layer defined for RECT.
+LEF read, Line 415 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 415 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 416 (Error): No layer defined for RECT.
+LEF read, Line 417 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 417 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 418 (Error): No layer defined for RECT.
+LEF read, Line 423 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 423 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 424 (Error): No layer defined for RECT.
+LEF read, Line 425 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 425 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 426 (Error): No layer defined for RECT.
+LEF read, Line 427 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 427 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 428 (Error): No layer defined for RECT.
+LEF read, Line 435 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 435 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 436 (Error): No layer defined for RECT.
+LEF read, Line 437 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 437 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 438 (Error): No layer defined for RECT.
+LEF read, Line 439 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 439 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 440 (Error): No layer defined for RECT.
+LEF read, Line 441 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 441 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 442 (Error): No layer defined for RECT.
+LEF read, Line 447 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 447 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 448 (Error): No layer defined for RECT.
+LEF read, Line 449 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 449 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 450 (Error): No layer defined for RECT.
+LEF read, Line 451 (Error): Don't know how to parse layer "Via1"
+LEF Read:  Further errors will not be reported.
+LEF read: Processed 1200 lines.
+LEF Read: encountered 768 errors total.
+Reading LEF data from file /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef.
+This action cannot be undone.
+LEF read, Line 46 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 46 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 56 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 56 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 66 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 66 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 75 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 75 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 87 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 87 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 99 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 99 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 108 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 108 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 135 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 135 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 145 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 145 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 155 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 155 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 164 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 164 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 175 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 175 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 188 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 188 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 197 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 197 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 223 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 223 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 235 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 235 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 246 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 246 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 257 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 257 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 266 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 266 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 279 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 279 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 284 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 284 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 305 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 305 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 318 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 318 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 330 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 330 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 339 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 339 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 352 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 352 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 364 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 364 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 369 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 369 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 396 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 396 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 408 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 408 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 420 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 420 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 430 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 430 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 440 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 440 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 450 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 450 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 460 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 460 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 478 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 478 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 484 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 484 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 507 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 507 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 519 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 519 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 530 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 530 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 540 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 540 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 550 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 550 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 565 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 565 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 577 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 577 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 584 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 584 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 605 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 605 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 615 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 615 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 624 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 624 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 636 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 636 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 648 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 648 (Error): Try adding this name to the LEF techfile section
+LEF Read:  Further errors will not be reported.
+LEF read, Line 6473 (Message): Unknown keyword "ANTENNAMAXCUTCAR" in LEF file; ignoring.
+LEF read: Processed 7927 lines.
+LEF Read: encountered 1042 errors total.
+Cell (NEWCELL) couldn't be read
+No such file or directory
+Creating new cell
+Reading DEF data from file ../fill/routed_fill.def.
+This action cannot be undone.
+LEF read, Line 63 (Error): Don't know how to parse layer "Metal1"
+LEF read, Line 63 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 63 (Error): Don't know how to parse layer "Via1"
+LEF read, Line 63 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 63 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 63 (Error): Try adding this name to the LEF techfile section
+DEF read, Line 63 (Warning): Improper layer order for VIARULE.
+DEF read, Line 63 (Error): No cut layer specified in VIARULE.
+LEF read, Line 64 (Error): Don't know how to parse layer "Metal2"
+LEF read, Line 64 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 64 (Error): Don't know how to parse layer "Via2"
+LEF read, Line 64 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 64 (Error): Don't know how to parse layer "Metal3"
+LEF read, Line 64 (Error): Try adding this name to the LEF techfile section
+DEF read, Line 64 (Warning): Improper layer order for VIARULE.
+DEF read, Line 64 (Error): No cut layer specified in VIARULE.
+LEF read, Line 65 (Error): Don't know how to parse layer "Metal3"
+LEF read, Line 65 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 65 (Error): Don't know how to parse layer "Via3"
+LEF read, Line 65 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 65 (Error): Don't know how to parse layer "Metal4"
+LEF read, Line 65 (Error): Try adding this name to the LEF techfile section
+DEF read, Line 65 (Warning): Improper layer order for VIARULE.
+DEF read, Line 65 (Error): No cut layer specified in VIARULE.
+LEF read, Line 66 (Error): Don't know how to parse layer "Metal4"
+LEF read, Line 66 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 66 (Error): Don't know how to parse layer "Via4"
+LEF read, Line 66 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 66 (Error): Don't know how to parse layer "Metal5"
+LEF read, Line 66 (Error): Try adding this name to the LEF techfile section
+DEF read, Line 66 (Warning): Improper layer order for VIARULE.
+DEF read, Line 66 (Error): No cut layer specified in VIARULE.
+LEF read, Line 67 (Error): Don't know how to parse layer "Metal5"
+LEF read, Line 67 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 67 (Error): Don't know how to parse layer "TopVia1"
+LEF read, Line 67 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 67 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 67 (Error): Try adding this name to the LEF techfile section
+DEF read, Line 67 (Warning): Improper layer order for VIARULE.
+DEF read, Line 67 (Error): No cut layer specified in VIARULE.
+LEF read, Line 68 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 68 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 68 (Error): Don't know how to parse layer "TopVia2"
+LEF read, Line 68 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 68 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 68 (Error): Try adding this name to the LEF techfile section
+DEF read, Line 68 (Warning): Improper layer order for VIARULE.
+DEF read, Line 68 (Error): No cut layer specified in VIARULE.
+  Processed 6 vias total.
+DEF read, Line 72 (Message): No layer for non-default width.
+DEF read, Line 72 (Message): No layer for non-default spacing.
+DEF read, Line 73 (Message): No layer for non-default width.
+DEF read, Line 73 (Message): No layer for non-default spacing.
+DEF read, Line 74 (Message): No layer for non-default width.
+DEF read, Line 74 (Message): No layer for non-default spacing.
+DEF read, Line 75 (Message): No layer for non-default width.
+DEF read, Line 75 (Message): No layer for non-default spacing.
+DEF read, Line 76 (Message): No layer for non-default width.
+DEF read, Line 76 (Message): No layer for non-default spacing.
+DEF read, Line 77 (Message): No layer for non-default width.
+DEF read, Line 77 (Message): No layer for non-default spacing.
+DEF read, Line 78 (Message): No layer for non-default width.
+DEF read, Line 78 (Message): No layer for non-default spacing.
+  Processed 1 non-default rules total.
+  Processed 2762 subcell instances total.
+LEF read, Line 2848 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2848 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2848 (Error): No layer defined for RECT.
+LEF read, Line 2849 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2849 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2849 (Error): No layer defined for RECT.
+LEF read, Line 2850 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2850 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2850 (Error): No layer defined for RECT.
+LEF read, Line 2851 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2851 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2851 (Error): No layer defined for RECT.
+LEF read, Line 2852 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2852 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2852 (Error): No layer defined for RECT.
+LEF read, Line 2853 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2853 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2853 (Error): No layer defined for RECT.
+LEF read, Line 2854 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2854 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2854 (Error): No layer defined for RECT.
+LEF read, Line 2855 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2855 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2855 (Error): No layer defined for RECT.
+LEF read, Line 2856 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2856 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2856 (Error): No layer defined for RECT.
+LEF read, Line 2857 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2857 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2857 (Error): No layer defined for RECT.
+LEF read, Line 2858 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2858 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2858 (Error): No layer defined for RECT.
+LEF read, Line 2859 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2859 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2859 (Error): No layer defined for RECT.
+LEF read, Line 2860 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2860 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2860 (Error): No layer defined for RECT.
+LEF read, Line 2861 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2861 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2861 (Error): No layer defined for RECT.
+LEF read, Line 2862 (Error): Don't know how to parse layer "TopMetal1"
+LEF read, Line 2862 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2862 (Error): No layer defined for RECT.
+DEF read, Line 2864 (Error): Pin specified without layer, was not placed.
+LEF read, Line 2866 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2866 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2866 (Error): No layer defined for RECT.
+LEF read, Line 2867 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2867 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2867 (Error): No layer defined for RECT.
+LEF read, Line 2868 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2868 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2868 (Error): No layer defined for RECT.
+LEF read, Line 2869 (Error): Don't know how to parse layer "TopMetal2"
+LEF read, Line 2869 (Error): Try adding this name to the LEF techfile section
+LEF read, Line 2869 (Error): No layer defined for RECT.
+LEF Read:  Further errors will not be reported.
+  Processed 45 pins total.

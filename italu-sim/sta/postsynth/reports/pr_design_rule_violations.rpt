@@ -1,0 +1,46 @@
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+ui_in[3]                                  8     65    -57 (VIOLATED)
+ui_in[2]                                  8     45    -37 (VIOLATED)
+scan_reg[27]_sg13g2_dfrbpq_1_Q_D_sg13g2_o21ai_1_Y_A1_sg13g2_nor2_1_B/Y      8     32    -24 (VIOLATED)
+scan_reg[41]_sg13g2_nor2_1_A_B_sg13g2_or2_1_X/X      8     31    -23 (VIOLATED)
+ui_in[1]                                  8     28    -20 (VIOLATED)
+scan_out_sg13g2_a22oi_1_A1_A2_sg13g2_nor2_1_Y/Y      8     27    -19 (VIOLATED)
+scan_reg[3]_sg13g2_nor2_1_A_B_sg13g2_nand2b_1_Y/Y      8     23    -15 (VIOLATED)
+bist_a[0]_sg13g2_dfrbpq_1_Q/Q             8     18    -10 (VIOLATED)
+clkbuf_0_clk/X                            8     16     -8 (VIOLATED)
+serial_a[7]_sg13g2_dfrbpq_1_Q/Q           8     15     -7 (VIOLATED)
+bist_a[1]_sg13g2_dfrbpq_1_Q/Q             8     14     -6 (VIOLATED)
+bist_a[6]_sg13g2_dfrbpq_1_Q/Q             8     14     -6 (VIOLATED)
+bist_state[1]_sg13g2_a21oi_1_A1/Y         8     14     -6 (VIOLATED)
+bist_state[2]_sg13g2_dfrbpq_1_Q/Q         8     14     -6 (VIOLATED)
+bist_a[4]_sg13g2_dfrbpq_1_Q/Q             8     13     -5 (VIOLATED)
+serial_a[3]_sg13g2_dfrbpq_1_Q/Q           8     13     -5 (VIOLATED)
+bist_a[2]_sg13g2_dfrbpq_1_Q/Q             8     12     -4 (VIOLATED)
+bist_a[3]_sg13g2_dfrbpq_1_Q/Q             8     12     -4 (VIOLATED)
+bist_a[5]_sg13g2_dfrbpq_1_Q/Q             8     12     -4 (VIOLATED)
+serial_a[1]_sg13g2_dfrbpq_1_Q/Q           8     12     -4 (VIOLATED)
+serial_a[4]_sg13g2_dfrbpq_1_Q/Q           8     12     -4 (VIOLATED)
+serial_a[5]_sg13g2_dfrbpq_1_Q/Q           8     12     -4 (VIOLATED)
+serial_a[6]_sg13g2_dfrbpq_1_Q/Q           8     12     -4 (VIOLATED)
+uio_in[1]                                 8     11     -3 (VIOLATED)
+serial_a[2]_sg13g2_dfrbpq_1_Q/Q           8     11     -3 (VIOLATED)
+serial_b[7]_sg13g2_dfrbpq_1_Q/Q           8     11     -3 (VIOLATED)
+uo_out_sg13g2_dfrbpq_1_Q_4_D_sg13g2_a21oi_1_Y_A2_sg13g2_a21o_1_X_A1_sg13g2_a22oi_1_Y_A1_sg13g2_nor2b_1_Y/Y      8     11     -3 (VIOLATED)
+uio_in[0]                                 8     10     -2 (VIOLATED)
+bist_a[7]_sg13g2_dfrbpq_1_Q_D_sg13g2_o21ai_1_Y_A1_sg13g2_nand2_1_A_Y_sg13g2_a221oi_1_B2_Y_sg13g2_o21ai_1_B1_A2_sg13g2_nand2_1_Y_A_sg13g2_o21ai_1_B1/Y      8     10     -2 (VIOLATED)
+lfsr[6]_sg13g2_a22oi_1_A1_B1_sg13g2_nor2_1_Y/Y      8      9        (VIOLATED)
+serial_a[0]_sg13g2_dfrbpq_1_Q/Q           8      9        (VIOLATED)
+serial_b[4]_sg13g2_dfrbpq_1_Q/Q           8      9        (VIOLATED)
+serial_b[5]_sg13g2_dfrbpq_1_Q/Q           8      9        (VIOLATED)
+serial_b[6]_sg13g2_dfrbpq_1_Q/Q           8      9        (VIOLATED)
+serial_opcode[0]_sg13g2_dfrbpq_1_Q/Q      8      9        (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+ui_in[3]                                0.30    0.34   -0.04 (VIOLATED)
+

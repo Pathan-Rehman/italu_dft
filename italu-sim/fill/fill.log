@@ -1,0 +1,21 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0127] Reading DEF file: ../routing/routed.def
+[INFO ODB-0128] Design: tt_um_italu
+[INFO ODB-0130]     Created 45 pins.
+[INFO ODB-0131]     Created 1130 components and 6310 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2152 connections.
+[INFO ODB-0133]     Created 1144 nets and 4045 connections.
+[INFO ODB-0134] Finished DEF file: ../routing/routed.def
+[INFO DPL-0001] Placed 1632 filler instances.
+
+================ FILL SUMMARY ================
+Instances before: 1130
+Instances after : 2762
+Fill cells added: 1632
+==============================================
+

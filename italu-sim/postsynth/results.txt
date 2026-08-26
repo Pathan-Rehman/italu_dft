@@ -1,0 +1,33 @@
+VCD info: dumpfile tb.vcd opened for output.
+=== iTALU local RTL regression ===
+PASS op_0x0: e1
+PASS op_0x1: 67
+PASS op_0x2: 26
+PASS op_0x3: bf
+PASS op_0x4: e1
+PASS op_0x5: 5f
+PASS op_0x6: 46
+PASS op_0x7: 51
+PASS op_0x8: d6
+PASS op_0x9: 59
+PASS op_0xa: d7
+PASS op_0xb: 01
+PASS op_0xc: 48
+PASS op_0xd: a8
+PASS op_0xe: f5
+PASS op_0xf: 80
+PASS ADD 0F+03: 12
+PASS SUB 0A-05: 05
+PASS FLAGS OV+N
+PASS FLAGS Z+C
+PASS FAULT SA1 bit0: 05
+PASS BIST DONE (514 cycles)
+PASS BIST DONE sticky (pin-level)
+PASS BIST PASS=1
+PASS MISR signature 93
+PASS FAULTED BIST detected
+PASS FAULT COUNTER=1
+=========================================
+RESULT: ALL 27 CHECKS PASSED
+=========================================
+tb_ps.v:242: $finish called at 33913000 (1ps)

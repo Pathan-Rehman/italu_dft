@@ -1,0 +1,8 @@
+Clock clk
+   0.41 source latency serial_a[4]_sg13g2_dfrbpq_1_Q/CLK ^
+  -0.38 target latency uo_out_sg13g2_dfrbpq_1_Q_4/CLK ^
+   0.10 clock uncertainty
+  -0.00 CRPR
+--------------
+   0.13 setup skew
+

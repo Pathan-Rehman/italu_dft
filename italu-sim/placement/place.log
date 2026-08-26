@@ -1,0 +1,161 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0127] Reading DEF file: ../pdn/pdn.def
+[INFO ODB-0128] Design: tt_um_italu
+[INFO ODB-0130]     Created 45 pins.
+[INFO ODB-0131]     Created 1076 components and 6094 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2152 connections.
+[INFO ODB-0133]     Created 1096 nets and 3942 connections.
+[INFO ODB-0134] Finished DEF file: ../pdn/pdn.def
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: (  2.880  3.780 ) ( 199.200 151.200 ) um
+[INFO GPL-0016] Core area:                   28941.494 um^2
+[INFO GPL-0036] Movable instances area:      16741.469 um^2
+[INFO GPL-0037] Total instances area:        16741.469 um^2
+[INFO GPL-0035] Pin density area adjust:      2083.755 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:              1076
+[INFO GPL-0007] Movable instances:                1076
+[INFO GPL-0008] Fixed instances:                     0
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                   1095
+[INFO GPL-0011] Number of pins:                   3977
+[INFO GPL-0012] Die BBox:       (  0.000  0.000 ) ( 202.080 154.980 ) um
+[INFO GPL-0013] Placement BBox: (  2.880  3.780 ) ( 199.200 151.200 ) um
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                 28941.494 um^2
+[INFO GPL-0017] Fixed instances area:            0.000 um^2
+[INFO GPL-0018] Movable instances area:      18825.224 um^2
+[INFO GPL-0019] Utilization:                    65.046 %
+[INFO GPL-0020] Standard cells area:         18825.224 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 1076	Region center = 0
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00000012 HPWL: 19284300
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00000012 HPWL: 12267343
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.00000012 HPWL: 12285943
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00000012 HPWL: 12296962
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00000012 HPWL: 12292498
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[WARNING GPL-0302] Target density 0.6200 is too low for the available free area.
+Automatically adjusting to uniform density 0.6600.
+[INFO GPL-0023] Placement target density:       0.6600
+[INFO GPL-0024] Movable insts average area:     17.496 um^2
+[INFO GPL-0025] Ideal bin area:                 26.508 um^2
+[INFO GPL-0026] Ideal bin count:                  1091
+[INFO GPL-0027] Total bin area:              28941.494 um^2
+[INFO GPL-0028] Bin count (X, Y):          32 ,     32
+[INFO GPL-0029] Bin size (W * H):       6.135 *  4.607 um
+[INFO GPL-0030] Number of bins:                   1024
+[INFO GPL-0084] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9904 |  4.457902e+03 |   +0.00% |  3.39e-16 |      
+       10 |   0.9845 |  4.793212e+03 |   +7.52% |  5.52e-16 |      
+       20 |   0.9839 |  4.807301e+03 |   +0.29% |  8.99e-16 |      
+       30 |   0.9834 |  4.828617e+03 |   +0.44% |  1.46e-15 |      
+       40 |   0.9833 |  4.834366e+03 |   +0.12% |  2.39e-15 |      
+       50 |   0.9834 |  4.826886e+03 |   -0.15% |  3.89e-15 |      
+       60 |   0.9835 |  4.819528e+03 |   -0.15% |  6.33e-15 |      
+       70 |   0.9835 |  4.817515e+03 |   -0.04% |  1.03e-14 |      
+       80 |   0.9835 |  4.819744e+03 |   +0.05% |  1.68e-14 |      
+       90 |   0.9835 |  4.822736e+03 |   +0.06% |  2.74e-14 |      
+      100 |   0.9834 |  4.826066e+03 |   +0.07% |  4.46e-14 |      
+      110 |   0.9834 |  4.833253e+03 |   +0.15% |  7.26e-14 |      
+      120 |   0.9833 |  4.851501e+03 |   +0.38% |  1.18e-13 |      
+      130 |   0.9832 |  4.890216e+03 |   +0.80% |  1.93e-13 |      
+      140 |   0.9797 |  4.965563e+03 |   +1.54% |  3.14e-13 |      
+      150 |   0.9785 |  5.089575e+03 |   +2.50% |  5.11e-13 |      
+      160 |   0.9740 |  5.286098e+03 |   +3.86% |  8.32e-13 |      
+      170 |   0.9699 |  5.584973e+03 |   +5.65% |  1.36e-12 |      
+      180 |   0.9620 |  5.988912e+03 |   +7.23% |  2.21e-12 |      
+      190 |   0.9522 |  6.488259e+03 |   +8.34% |  3.60e-12 |      
+      200 |   0.9395 |  7.053917e+03 |   +8.72% |  5.86e-12 |      
+      210 |   0.9211 |  7.691571e+03 |   +9.04% |  9.54e-12 |      
+      220 |   0.9027 |  8.561520e+03 |  +11.31% |  1.55e-11 |      
+      230 |   0.8808 |  9.483152e+03 |  +10.76% |  2.53e-11 |      
+      240 |   0.8583 |  1.038614e+04 |   +9.52% |  4.12e-11 |      
+      250 |   0.8257 |  1.134659e+04 |   +9.25% |  6.71e-11 |      
+      260 |   0.7942 |  1.221287e+04 |   +7.63% |  1.09e-10 |      
+      270 |   0.7542 |  1.298850e+04 |   +6.35% |  1.78e-10 |      
+      280 |   0.7119 |  1.384176e+04 |   +6.57% |  2.90e-10 |      
+      290 |   0.6698 |  1.492418e+04 |   +7.82% |  4.72e-10 |      
+      300 |   0.6296 |  1.584003e+04 |   +6.14% |  7.70e-10 |      
+      310 |   0.5860 |  1.651085e+04 |   +4.23% |  1.25e-09 |      
+      320 |   0.5398 |  1.746245e+04 |   +5.76% |  2.04e-09 |      
+      330 |   0.4840 |  1.816084e+04 |   +4.00% |  3.33e-09 |      
+      340 |   0.4346 |  1.859697e+04 |   +2.40% |  5.42e-09 |      
+      350 |   0.3835 |  1.902564e+04 |   +2.31% |  8.82e-09 |      
+      360 |   0.3401 |  1.945997e+04 |   +2.28% |  1.42e-08 |      
+      370 |   0.3118 |  1.983874e+04 |   +1.95% |  2.10e-08 |      
+      380 |   0.2727 |  2.024992e+04 |   +2.07% |  3.09e-08 |      
+      390 |   0.2385 |  2.062162e+04 |   +1.84% |  4.55e-08 |      
+      400 |   0.2142 |  2.096652e+04 |   +1.67% |  6.70e-08 |      
+      410 |   0.1832 |  2.120901e+04 |   +1.16% |  9.87e-08 |      
+      420 |   0.1578 |  2.145141e+04 |   +1.14% |  1.45e-07 |      
+      430 |   0.1367 |  2.159933e+04 |   +0.69% |  2.14e-07 |      
+      440 |   0.1197 |  2.175056e+04 |   +0.70% |  3.15e-07 |      
+      450 |   0.1023 |  2.182739e+04 |   +0.35% |  4.65e-07 |      
+      452 |   0.0992 |  2.186185e+04 |          |  5.22e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 452
+[INFO GPL-1002] Placed Cell Area            18825.2239
+[INFO GPL-1003] Available Free Area         28941.4944
+[INFO GPL-1004] Minimum Feasible Density        0.6600 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.7227
+[INFO GPL-1008]     - For 80% usage of free space: 0.8131
+[INFO GPL-1014] Final placement area: 18825.22 (+0.00%)
+[WARNING EST-0018] wire capacitance for corner default is zero. Use the set_wire_rc command to set wire resistance and capacitance.
+
+================ GLOBAL PLACEMENT ================
+worst slack max 15.29
+tns max 0.00
+==================================================
+
+[INFO DPL-0006] Core area: 28941.49 um^2
+[INFO DPL-0007] Movable instances area: 16741.47 um^2
+[INFO DPL-0008] Fixed instances area within core: 0.00 um^2
+[INFO DPL-0009] Utilization: 57.8%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 1076 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |         28 |         6 |        22
+        1 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 1.
+[INFO DPL-0500] Runtime: 0.03s
+Placement Analysis
+---------------------------------
+total displacement       4049.7 u
+average displacement        3.8 u
+max displacement           20.2 u
+original HPWL           21937.4 u
+legalized HPWL          25410.4 u
+delta HPWL                   16 %
+
+[WARNING EST-0018] wire capacitance for corner default is zero. Use the set_wire_rc command to set wire resistance and capacitance.
+
+================ PLACEMENT SUMMARY ================
+Design area 16741 um^2 58% utilization.
+--- Setup timing after placement ---
+worst slack max 15.29
+wns max 0.00
+tns max 0.00
+====================================================
+

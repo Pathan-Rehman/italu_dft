@@ -1,0 +1,30 @@
+# Synthesis script mirroring LibreLane's pyosys.Synthesis step:
+# elaborate -> generic synth -> map to sg13g2 standard cells -> stats
+
+
+
+
+# Read and elaborate the RTL
+read_liberty -lib /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+read_verilog project.v
+hierarchy -check -top tt_um_italu
+
+# Generic synthesis (RTL -> generic gates), flattened like the TT flow
+synth -top tt_um_italu -flatten
+opt -purge
+
+# Map flip-flops and combinational logic to the PDK cells
+dfflibmap -liberty /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+abc -liberty /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+setundef -zero
+splitnets
+opt_clean -purge
+
+# Hierarchy/name hygiene for the netlist output
+autoname
+
+stat -liberty /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+
+# Write outputs
+write_verilog -noattr synth_netlist.v
+write_json synth.json

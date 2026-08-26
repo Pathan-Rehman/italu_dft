@@ -1,0 +1,1936 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.67 (git sha1 2d1509d1b, Release, GNU /usr/bin/c++ 13.3.0)
+
+-- Executing script file `synth.ys' --
+
+1. Executing Liberty frontend: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: project.v
+Parsing Verilog input from `project.v' to AST representation.
+Generating RTLIL representation for module `\tt_um_italu'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \tt_um_italu
+
+3.2. Analyzing design hierarchy..
+Top module:  \tt_um_italu
+Removed 0 unused modules.
+
+4. Executing SYNTH pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \tt_um_italu
+
+4.1.2. Analyzing design hierarchy..
+Top module:  \tt_um_italu
+Removed 0 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$project.v:1383$160 in module tt_um_italu.
+Marked 1 switch rules as full_case in process $proc$project.v:1383$160 in module tt_um_italu.
+Marked 1 switch rules as full_case in process $proc$project.v:1301$157 in module tt_um_italu.
+Marked 2 switch rules as full_case in process $proc$project.v:1263$155 in module tt_um_italu.
+Marked 4 switch rules as full_case in process $proc$project.v:1037$145 in module tt_um_italu.
+Removed 5 dead cases from process $proc$project.v:856$126 in module tt_um_italu.
+Marked 6 switch rules as full_case in process $proc$project.v:856$126 in module tt_um_italu.
+Removed 1 dead cases from process $proc$project.v:759$112 in module tt_um_italu.
+Marked 4 switch rules as full_case in process $proc$project.v:759$112 in module tt_um_italu.
+Marked 1 switch rules as full_case in process $proc$project.v:713$109 in module tt_um_italu.
+Removed 5 dead cases from process $proc$project.v:586$100 in module tt_um_italu.
+Marked 6 switch rules as full_case in process $proc$project.v:586$100 in module tt_um_italu.
+Removed 1 dead cases from process $proc$project.v:420$55 in module tt_um_italu.
+Marked 8 switch rules as full_case in process $proc$project.v:420$55 in module tt_um_italu.
+Removed 5 dead cases from process $proc$project.v:286$46 in module tt_um_italu.
+Marked 6 switch rules as full_case in process $proc$project.v:286$46 in module tt_um_italu.
+Removed 1 dead cases from process $proc$project.v:108$1 in module tt_um_italu.
+Marked 8 switch rules as full_case in process $proc$project.v:108$1 in module tt_um_italu.
+Removed a total of 19 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 21 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\tt_um_italu.$proc$project.v:1301$157'.
+Found async reset \rst_n in `\tt_um_italu.$proc$project.v:1263$155'.
+Found async reset \rst_n in `\tt_um_italu.$proc$project.v:1037$145'.
+Found async reset \rst_n in `\tt_um_italu.$proc$project.v:713$109'.
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~50 debug messages>
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\tt_um_italu.$proc$project.v:1383$160'.
+     1/8: $1\status_output[7:0] [7]
+     2/8: $1\status_output[7:0] [3]
+     3/8: $1\status_output[7:0] [2]
+     4/8: $1\status_output[7:0] [1]
+     5/8: $1\status_output[7:0] [0]
+     6/8: $1\status_output[7:0] [6]
+     7/8: $1\status_output[7:0] [5]
+     8/8: $1\status_output[7:0] [4]
+Creating decoders for process `\tt_um_italu.$proc$project.v:1301$157'.
+     1/9: $0\overflow_flag[0:0]
+     2/9: $0\negative_flag[0:0]
+     3/9: $0\carry_flag[0:0]
+     4/9: $0\zero_flag[0:0]
+     5/9: $0\alu_result[7:0]
+     6/9: $0\operation[3:0]
+     7/9: $0\operand_b[7:0]
+     8/9: $0\operand_a[7:0]
+     9/9: $0\serial_reg[19:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:1263$155'.
+     1/2: $0\scan_out[0:0]
+     2/2: $0\scan_reg[63:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:1037$145'.
+     1/11: $0\bist_state[2:0]
+     2/11: $0\test_pass[0:0]
+     3/11: $0\bist_done[0:0]
+     4/11: $0\bist_fault[0:0]
+     5/11: $0\bist_op[3:0]
+     6/11: $0\bist_b[7:0]
+     7/11: $0\bist_a[7:0]
+     8/11: $0\bist_pattern_count[7:0]
+     9/11: $0\misr[7:0]
+    10/11: $0\lfsr[7:0]
+    11/11: $0\fault_counter[7:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:997$136'.
+Creating decoders for process `\tt_um_italu.$proc$project.v:856$126'.
+     1/34: $6\bist_observed[7:0] [6]
+     2/34: $6\bist_observed[7:0] [5]
+     3/34: $6\bist_observed[7:0] [3]
+     4/34: $6\bist_observed[7:0] [1]
+     5/34: $6\bist_observed[7:0] [7]
+     6/34: $6\bist_observed[7:0] [2]
+     7/34: $6\bist_observed[7:0] [4]
+     8/34: $6\bist_observed[7:0] [0]
+     9/34: $5\bist_observed[7:0] [6]
+    10/34: $5\bist_observed[7:0] [5]
+    11/34: $5\bist_observed[7:0] [3]
+    12/34: $5\bist_observed[7:0] [1]
+    13/34: $5\bist_observed[7:0] [7]
+    14/34: $5\bist_observed[7:0] [2]
+    15/34: $5\bist_observed[7:0] [4]
+    16/34: $5\bist_observed[7:0] [0]
+    17/34: $4\bist_observed[7:0] [6]
+    18/34: $4\bist_observed[7:0] [5]
+    19/34: $4\bist_observed[7:0] [3]
+    20/34: $4\bist_observed[7:0] [1]
+    21/34: $4\bist_observed[7:0] [7]
+    22/34: $4\bist_observed[7:0] [2]
+    23/34: $4\bist_observed[7:0] [4]
+    24/34: $4\bist_observed[7:0] [0]
+    25/34: $3\bist_observed[7:0] [6]
+    26/34: $3\bist_observed[7:0] [5]
+    27/34: $3\bist_observed[7:0] [3]
+    28/34: $3\bist_observed[7:0] [1]
+    29/34: $3\bist_observed[7:0] [7]
+    30/34: $3\bist_observed[7:0] [2]
+    31/34: $3\bist_observed[7:0] [4]
+    32/34: $3\bist_observed[7:0] [0]
+    33/34: $2\bist_observed[7:0]
+    34/34: $1\bist_observed[7:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:759$112'.
+     1/4: $4\bist_expected[7:0]
+     2/4: $3\bist_expected[7:0]
+     3/4: $2\bist_expected[7:0]
+     4/4: $1\bist_expected[7:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:713$109'.
+     1/1: $0\cycle_counter[7:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:586$100'.
+     1/34: $6\exec_faulted_value[7:0] [6]
+     2/34: $6\exec_faulted_value[7:0] [5]
+     3/34: $6\exec_faulted_value[7:0] [3]
+     4/34: $6\exec_faulted_value[7:0] [1]
+     5/34: $6\exec_faulted_value[7:0] [7]
+     6/34: $6\exec_faulted_value[7:0] [2]
+     7/34: $6\exec_faulted_value[7:0] [4]
+     8/34: $6\exec_faulted_value[7:0] [0]
+     9/34: $5\exec_faulted_value[7:0] [6]
+    10/34: $5\exec_faulted_value[7:0] [5]
+    11/34: $5\exec_faulted_value[7:0] [3]
+    12/34: $5\exec_faulted_value[7:0] [1]
+    13/34: $5\exec_faulted_value[7:0] [7]
+    14/34: $5\exec_faulted_value[7:0] [2]
+    15/34: $5\exec_faulted_value[7:0] [4]
+    16/34: $5\exec_faulted_value[7:0] [0]
+    17/34: $4\exec_faulted_value[7:0] [6]
+    18/34: $4\exec_faulted_value[7:0] [5]
+    19/34: $4\exec_faulted_value[7:0] [3]
+    20/34: $4\exec_faulted_value[7:0] [1]
+    21/34: $4\exec_faulted_value[7:0] [7]
+    22/34: $4\exec_faulted_value[7:0] [2]
+    23/34: $4\exec_faulted_value[7:0] [4]
+    24/34: $4\exec_faulted_value[7:0] [0]
+    25/34: $3\exec_faulted_value[7:0] [6]
+    26/34: $3\exec_faulted_value[7:0] [5]
+    27/34: $3\exec_faulted_value[7:0] [3]
+    28/34: $3\exec_faulted_value[7:0] [1]
+    29/34: $3\exec_faulted_value[7:0] [7]
+    30/34: $3\exec_faulted_value[7:0] [2]
+    31/34: $3\exec_faulted_value[7:0] [4]
+    32/34: $3\exec_faulted_value[7:0] [0]
+    33/34: $2\exec_faulted_value[7:0]
+    34/34: $1\exec_faulted_value[7:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:420$55'.
+     1/11: $8\exec_value[7:0]
+     2/11: $7\exec_value[7:0]
+     3/11: $6\exec_value[7:0]
+     4/11: $5\exec_value[7:0]
+     5/11: $4\exec_value[7:0]
+     6/11: $3\exec_value[7:0]
+     7/11: $2\exec_value[7:0]
+     8/11: $1\exec_overflow[0:0]
+     9/11: $1\exec_carry[0:0]
+    10/11: $1\exec_value[7:0]
+    11/11: $1\exec_sum[8:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:286$46'.
+     1/34: $6\faulted_result[7:0] [6]
+     2/34: $6\faulted_result[7:0] [5]
+     3/34: $6\faulted_result[7:0] [3]
+     4/34: $6\faulted_result[7:0] [1]
+     5/34: $6\faulted_result[7:0] [7]
+     6/34: $6\faulted_result[7:0] [2]
+     7/34: $6\faulted_result[7:0] [4]
+     8/34: $6\faulted_result[7:0] [0]
+     9/34: $5\faulted_result[7:0] [6]
+    10/34: $5\faulted_result[7:0] [5]
+    11/34: $5\faulted_result[7:0] [3]
+    12/34: $5\faulted_result[7:0] [1]
+    13/34: $5\faulted_result[7:0] [7]
+    14/34: $5\faulted_result[7:0] [2]
+    15/34: $5\faulted_result[7:0] [4]
+    16/34: $5\faulted_result[7:0] [0]
+    17/34: $4\faulted_result[7:0] [6]
+    18/34: $4\faulted_result[7:0] [5]
+    19/34: $4\faulted_result[7:0] [3]
+    20/34: $4\faulted_result[7:0] [1]
+    21/34: $4\faulted_result[7:0] [7]
+    22/34: $4\faulted_result[7:0] [2]
+    23/34: $4\faulted_result[7:0] [4]
+    24/34: $4\faulted_result[7:0] [0]
+    25/34: $3\faulted_result[7:0] [6]
+    26/34: $3\faulted_result[7:0] [5]
+    27/34: $3\faulted_result[7:0] [3]
+    28/34: $3\faulted_result[7:0] [1]
+    29/34: $3\faulted_result[7:0] [7]
+    30/34: $3\faulted_result[7:0] [2]
+    31/34: $3\faulted_result[7:0] [4]
+    32/34: $3\faulted_result[7:0] [0]
+    33/34: $2\faulted_result[7:0]
+    34/34: $1\faulted_result[7:0]
+Creating decoders for process `\tt_um_italu.$proc$project.v:108$1'.
+     1/11: $8\alu_value[7:0]
+     2/11: $7\alu_value[7:0]
+     3/11: $6\alu_value[7:0]
+     4/11: $5\alu_value[7:0]
+     5/11: $4\alu_value[7:0]
+     6/11: $3\alu_value[7:0]
+     7/11: $2\alu_value[7:0]
+     8/11: $1\alu_overflow[0:0]
+     9/11: $1\alu_carry[0:0]
+    10/11: $1\alu_value[7:0]
+    11/11: $1\alu_sum[8:0]
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\tt_um_italu.\status_output' from process `\tt_um_italu.$proc$project.v:1383$160'.
+No latch inferred for signal `\tt_um_italu.\misr_next' from process `\tt_um_italu.$proc$project.v:997$136'.
+No latch inferred for signal `\tt_um_italu.\bist_observed' from process `\tt_um_italu.$proc$project.v:856$126'.
+No latch inferred for signal `\tt_um_italu.\bist_expected' from process `\tt_um_italu.$proc$project.v:759$112'.
+No latch inferred for signal `\tt_um_italu.\exec_faulted_value' from process `\tt_um_italu.$proc$project.v:586$100'.
+No latch inferred for signal `\tt_um_italu.\exec_value' from process `\tt_um_italu.$proc$project.v:420$55'.
+No latch inferred for signal `\tt_um_italu.\exec_sum' from process `\tt_um_italu.$proc$project.v:420$55'.
+No latch inferred for signal `\tt_um_italu.\exec_carry' from process `\tt_um_italu.$proc$project.v:420$55'.
+No latch inferred for signal `\tt_um_italu.\exec_overflow' from process `\tt_um_italu.$proc$project.v:420$55'.
+No latch inferred for signal `\tt_um_italu.\faulted_result' from process `\tt_um_italu.$proc$project.v:286$46'.
+No latch inferred for signal `\tt_um_italu.\alu_value' from process `\tt_um_italu.$proc$project.v:108$1'.
+No latch inferred for signal `\tt_um_italu.\alu_sum' from process `\tt_um_italu.$proc$project.v:108$1'.
+No latch inferred for signal `\tt_um_italu.\alu_carry' from process `\tt_um_italu.$proc$project.v:108$1'.
+No latch inferred for signal `\tt_um_italu.\alu_overflow' from process `\tt_um_italu.$proc$project.v:108$1'.
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\tt_um_italu.\serial_reg' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2127' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\operand_a' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2132' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\operand_b' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2137' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\operation' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2142' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\alu_result' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2147' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\zero_flag' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2152' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\carry_flag' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2157' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\negative_flag' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2162' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\overflow_flag' using process `\tt_um_italu.$proc$project.v:1301$157'.
+  created $adff cell `$procdff$2167' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\scan_reg' using process `\tt_um_italu.$proc$project.v:1263$155'.
+  created $adff cell `$procdff$2172' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\scan_out' using process `\tt_um_italu.$proc$project.v:1263$155'.
+  created $adff cell `$procdff$2177' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\fault_counter' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2182' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\lfsr' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2187' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\misr' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2192' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_pattern_count' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2197' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_a' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2202' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_b' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2207' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_op' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2212' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_fault' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2217' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_done' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2222' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\test_pass' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2227' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\bist_state' using process `\tt_um_italu.$proc$project.v:1037$145'.
+  created $adff cell `$procdff$2232' with positive edge clock and positive level reset.
+Creating register for signal `\tt_um_italu.\cycle_counter' using process `\tt_um_italu.$proc$project.v:713$109'.
+  created $adff cell `$procdff$2237' with positive edge clock and positive level reset.
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\tt_um_italu.$proc$project.v:1383$160'.
+Removing empty process `tt_um_italu.$proc$project.v:1383$160'.
+Found and cleaned up 2 empty switches in `\tt_um_italu.$proc$project.v:1301$157'.
+Removing empty process `tt_um_italu.$proc$project.v:1301$157'.
+Found and cleaned up 2 empty switches in `\tt_um_italu.$proc$project.v:1263$155'.
+Removing empty process `tt_um_italu.$proc$project.v:1263$155'.
+Found and cleaned up 7 empty switches in `\tt_um_italu.$proc$project.v:1037$145'.
+Removing empty process `tt_um_italu.$proc$project.v:1037$145'.
+Removing empty process `tt_um_italu.$proc$project.v:997$136'.
+Found and cleaned up 6 empty switches in `\tt_um_italu.$proc$project.v:856$126'.
+Removing empty process `tt_um_italu.$proc$project.v:856$126'.
+Found and cleaned up 4 empty switches in `\tt_um_italu.$proc$project.v:759$112'.
+Removing empty process `tt_um_italu.$proc$project.v:759$112'.
+Removing empty process `tt_um_italu.$proc$project.v:713$109'.
+Found and cleaned up 6 empty switches in `\tt_um_italu.$proc$project.v:586$100'.
+Removing empty process `tt_um_italu.$proc$project.v:586$100'.
+Found and cleaned up 8 empty switches in `\tt_um_italu.$proc$project.v:420$55'.
+Removing empty process `tt_um_italu.$proc$project.v:420$55'.
+Found and cleaned up 6 empty switches in `\tt_um_italu.$proc$project.v:286$46'.
+Removing empty process `tt_um_italu.$proc$project.v:286$46'.
+Found and cleaned up 8 empty switches in `\tt_um_italu.$proc$project.v:108$1'.
+Removing empty process `tt_um_italu.$proc$project.v:108$1'.
+Cleaned up 50 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~201 debug messages>
+
+4.3. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_italu...
+Found and reported 0 problems.
+
+4.4. Executing FLATTEN pass (flatten design).
+
+4.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 582 unused cells and 930 unused wires.
+<suppressed ~590 debug messages>
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_italu...
+Found and reported 0 problems.
+
+4.8. Executing OPT pass (performing simple optimizations).
+
+4.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 1092 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 425 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+<suppressed ~2001 debug messages>
+Removed a total of 667 cells.
+
+4.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$815.
+    dead port 2/2 on $mux $procmux$521.
+    dead port 2/2 on $mux $procmux$519.
+    dead port 2/2 on $mux $procmux$813.
+    dead port 2/2 on $mux $procmux$1417.
+    dead port 2/2 on $mux $procmux$1147.
+    dead port 2/2 on $mux $procmux$1145.
+    dead port 2/2 on $mux $procmux$506.
+    dead port 2/2 on $mux $procmux$504.
+    dead port 2/2 on $mux $procmux$1009.
+    dead port 2/2 on $mux $procmux$798.
+    dead port 2/2 on $mux $procmux$796.
+    dead port 2/2 on $mux $procmux$1007.
+    dead port 2/2 on $mux $procmux$1409.
+    dead port 2/2 on $mux $procmux$491.
+    dead port 2/2 on $mux $procmux$489.
+    dead port 2/2 on $mux $procmux$1244.
+    dead port 2/2 on $mux $procmux$1242.
+    dead port 2/2 on $mux $procmux$781.
+    dead port 2/2 on $mux $procmux$779.
+    dead port 2/2 on $mux $procmux$1329.
+    dead port 2/2 on $mux $procmux$476.
+    dead port 2/2 on $mux $procmux$474.
+    dead port 2/2 on $mux $procmux$994.
+    dead port 2/2 on $mux $procmux$992.
+    dead port 2/2 on $mux $procmux$1131.
+    dead port 2/2 on $mux $procmux$1129.
+    dead port 2/2 on $mux $procmux$1327.
+    dead port 2/2 on $mux $procmux$1402.
+    dead port 2/2 on $mux $procmux$764.
+    dead port 2/2 on $mux $procmux$461.
+    dead port 2/2 on $mux $procmux$459.
+    dead port 2/2 on $mux $procmux$762.
+    dead port 2/2 on $mux $procmux$1396.
+    dead port 1/2 on $mux $procmux$1394.
+    dead port 2/2 on $mux $procmux$979.
+    dead port 2/2 on $mux $procmux$977.
+    dead port 2/2 on $mux $procmux$446.
+    dead port 2/2 on $mux $procmux$444.
+    dead port 2/2 on $mux $procmux$747.
+    dead port 2/2 on $mux $procmux$745.
+    dead port 2/2 on $mux $procmux$1115.
+    dead port 2/2 on $mux $procmux$1113.
+    dead port 2/2 on $mux $procmux$1227.
+    dead port 2/2 on $mux $procmux$1225.
+    dead port 2/2 on $mux $procmux$431.
+    dead port 2/2 on $mux $procmux$429.
+    dead port 2/2 on $mux $procmux$1387.
+    dead port 2/2 on $mux $procmux$965.
+    dead port 2/2 on $mux $procmux$730.
+    dead port 2/2 on $mux $procmux$728.
+    dead port 2/2 on $mux $procmux$963.
+    dead port 2/2 on $mux $procmux$417.
+    dead port 2/2 on $mux $procmux$415.
+    dead port 2/2 on $mux $procmux$1312.
+    dead port 2/2 on $mux $procmux$1310.
+    dead port 2/2 on $mux $procmux$1382.
+    dead port 2/2 on $mux $procmux$1099.
+    dead port 2/2 on $mux $procmux$1097.
+    dead port 2/2 on $mux $procmux$713.
+    dead port 2/2 on $mux $procmux$403.
+    dead port 2/2 on $mux $procmux$401.
+    dead port 2/2 on $mux $procmux$711.
+    dead port 2/2 on $mux $procmux$951.
+    dead port 2/2 on $mux $procmux$949.
+    dead port 1/2 on $mux $procmux$1380.
+    dead port 2/2 on $mux $procmux$1211.
+    dead port 2/2 on $mux $procmux$1209.
+    dead port 2/2 on $mux $procmux$389.
+    dead port 2/2 on $mux $procmux$387.
+    dead port 2/2 on $mux $procmux$696.
+    dead port 2/2 on $mux $procmux$694.
+    dead port 2/2 on $mux $procmux$1371.
+    dead port 2/2 on $mux $procmux$375.
+    dead port 2/2 on $mux $procmux$373.
+    dead port 2/2 on $mux $procmux$937.
+    dead port 2/2 on $mux $procmux$935.
+    dead port 2/2 on $mux $procmux$1084.
+    dead port 2/2 on $mux $procmux$1082.
+    dead port 2/2 on $mux $procmux$679.
+    dead port 2/2 on $mux $procmux$677.
+    dead port 2/2 on $mux $procmux$361.
+    dead port 2/2 on $mux $procmux$359.
+    dead port 2/2 on $mux $procmux$1295.
+    dead port 2/2 on $mux $procmux$1293.
+    dead port 2/2 on $mux $procmux$1195.
+    dead port 2/2 on $mux $procmux$923.
+    dead port 2/2 on $mux $procmux$663.
+    dead port 2/2 on $mux $procmux$347.
+    dead port 2/2 on $mux $procmux$345.
+    dead port 2/2 on $mux $procmux$661.
+    dead port 2/2 on $mux $procmux$921.
+    dead port 2/2 on $mux $procmux$1193.
+    dead port 2/2 on $mux $procmux$1069.
+    dead port 2/2 on $mux $procmux$1067.
+    dead port 2/2 on $mux $procmux$1363.
+    dead port 2/2 on $mux $procmux$333.
+    dead port 2/2 on $mux $procmux$331.
+    dead port 2/2 on $mux $procmux$1361.
+    dead port 2/2 on $mux $procmux$647.
+    dead port 2/2 on $mux $procmux$645.
+    dead port 2/2 on $mux $procmux$909.
+    dead port 2/2 on $mux $procmux$907.
+    dead port 2/2 on $mux $procmux$631.
+    dead port 2/2 on $mux $procmux$629.
+    dead port 2/2 on $mux $procmux$1054.
+    dead port 2/2 on $mux $procmux$1052.
+    dead port 2/2 on $mux $procmux$1179.
+    dead port 2/2 on $mux $procmux$895.
+    dead port 2/2 on $mux $procmux$893.
+    dead port 2/2 on $mux $procmux$1177.
+    dead port 2/2 on $mux $procmux$1278.
+    dead port 2/2 on $mux $procmux$615.
+    dead port 2/2 on $mux $procmux$613.
+    dead port 2/2 on $mux $procmux$1276.
+    dead port 2/2 on $mux $procmux$881.
+    dead port 2/2 on $mux $procmux$599.
+    dead port 2/2 on $mux $procmux$597.
+    dead port 2/2 on $mux $procmux$879.
+    dead port 2/2 on $mux $procmux$1039.
+    dead port 2/2 on $mux $procmux$1037.
+    dead port 2/2 on $mux $procmux$1346.
+    dead port 2/2 on $mux $procmux$1163.
+    dead port 2/2 on $mux $procmux$1161.
+    dead port 2/2 on $mux $procmux$1344.
+    dead port 2/2 on $mux $procmux$583.
+    dead port 2/2 on $mux $procmux$581.
+    dead port 2/2 on $mux $procmux$567.
+    dead port 2/2 on $mux $procmux$565.
+    dead port 2/2 on $mux $procmux$551.
+    dead port 2/2 on $mux $procmux$549.
+    dead port 2/2 on $mux $procmux$850.
+    dead port 2/2 on $mux $procmux$1426.
+    dead port 2/2 on $mux $procmux$841.
+    dead port 2/2 on $mux $procmux$833.
+    dead port 2/2 on $mux $procmux$1261.
+    dead port 2/2 on $mux $procmux$536.
+    dead port 2/2 on $mux $procmux$534.
+    dead port 2/2 on $mux $procmux$823.
+    dead port 2/2 on $mux $procmux$1024.
+    dead port 2/2 on $mux $procmux$1022.
+    dead port 2/2 on $mux $procmux$1259.
+Removed 142 multiplexer ports.
+<suppressed ~305 debug messages>
+
+4.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    New ctrl vector for $pmux cell $procmux$926: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2239 }
+    New ctrl vector for $pmux cell $procmux$668: { $auto$opt_reduce.cc:137:opt_pmux$2241 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$420: { $auto$opt_reduce.cc:137:opt_pmux$2243 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$350: { $auto$opt_reduce.cc:137:opt_pmux$2245 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$1073: { $auto$opt_reduce.cc:137:opt_pmux$2247 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$1104: { $auto$opt_reduce.cc:137:opt_pmux$2249 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$787: { $auto$opt_reduce.cc:137:opt_pmux$2251 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$336: { $auto$opt_reduce.cc:137:opt_pmux$2253 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$719: { $auto$opt_reduce.cc:137:opt_pmux$2255 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$983: { $auto$opt_reduce.cc:137:opt_pmux$2257 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$652: { $auto$opt_reduce.cc:137:opt_pmux$2259 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$406: { $auto$opt_reduce.cc:137:opt_pmux$2261 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$1136: { $auto$opt_reduce.cc:137:opt_pmux$2263 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$804: { $auto$opt_reduce.cc:137:opt_pmux$2265 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$912: { $auto$opt_reduce.cc:137:opt_pmux$2267 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$1152: { $auto$opt_reduce.cc:137:opt_pmux$2269 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$450: { $auto$opt_reduce.cc:137:opt_pmux$2271 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$322: { $auto$opt_reduce.cc:137:opt_pmux$2273 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$1284: { $auto$opt_reduce.cc:137:opt_pmux$2275 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$1184: { $auto$opt_reduce.cc:137:opt_pmux$2277 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$636: { $auto$opt_reduce.cc:137:opt_pmux$2279 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$1058: { $auto$opt_reduce.cc:137:opt_pmux$2281 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$954: { $auto$opt_reduce.cc:137:opt_pmux$2283 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$1428: { $auto$opt_reduce.cc:137:opt_pmux$2285 $procmux$1477_CMP $procmux$1478_CMP }
+    New ctrl vector for $pmux cell $procmux$1233: { $auto$opt_reduce.cc:137:opt_pmux$2287 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$998: { $auto$opt_reduce.cc:137:opt_pmux$2289 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$898: { $auto$opt_reduce.cc:137:opt_pmux$2291 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$1216: { $auto$opt_reduce.cc:137:opt_pmux$2293 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$480: { $auto$opt_reduce.cc:137:opt_pmux$2295 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$753: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2297 }
+    New ctrl vector for $pmux cell $procmux$392: { $auto$opt_reduce.cc:137:opt_pmux$2299 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$620: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2301 }
+    New ctrl vector for $pmux cell $procmux$1120: { $auto$opt_reduce.cc:137:opt_pmux$2303 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$525: { $auto$opt_reduce.cc:137:opt_pmux$2305 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$702: { $auto$opt_reduce.cc:137:opt_pmux$2307 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$1043: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2309 }
+    New ctrl vector for $pmux cell $procmux$884: { $auto$opt_reduce.cc:137:opt_pmux$2311 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$1352: { $auto$opt_reduce.cc:137:opt_pmux$2313 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$604: { $auto$opt_reduce.cc:137:opt_pmux$2315 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$1013: { $auto$opt_reduce.cc:137:opt_pmux$2317 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$1088: { $auto$opt_reduce.cc:137:opt_pmux$2319 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$1168: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2321 }
+    New ctrl vector for $pmux cell $procmux$940: { $auto$opt_reduce.cc:137:opt_pmux$2323 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$378: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2325 }
+    New ctrl vector for $pmux cell $procmux$588: { $auto$opt_reduce.cc:137:opt_pmux$2327 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$435: { $auto$opt_reduce.cc:137:opt_pmux$2329 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$1335: { $auto$opt_reduce.cc:137:opt_pmux$2331 $procmux$1356_CMP }
+    New ctrl vector for $pmux cell $procmux$870: { $auto$opt_reduce.cc:137:opt_pmux$2333 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$1267: { $auto$opt_reduce.cc:137:opt_pmux$2335 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$572: { $auto$opt_reduce.cc:137:opt_pmux$2337 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$495: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2339 }
+    New ctrl vector for $pmux cell $procmux$1250: { $auto$opt_reduce.cc:137:opt_pmux$2341 $procmux$1355_CMP }
+    New ctrl vector for $pmux cell $procmux$556: { $auto$opt_reduce.cc:137:opt_pmux$2343 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$852: { $auto$opt_reduce.cc:137:opt_pmux$2347 $auto$opt_reduce.cc:137:opt_pmux$2345 $procmux$855_CMP $procmux$856_CMP $procmux$857_CMP $procmux$858_CMP $procmux$859_CMP $procmux$860_CMP $procmux$861_CMP $procmux$862_CMP $procmux$863_CMP $procmux$864_CMP $procmux$865_CMP $procmux$866_CMP }
+    New ctrl vector for $pmux cell $procmux$685: { $auto$opt_reduce.cc:137:opt_pmux$2349 $procmux$1354_CMP }
+    New ctrl vector for $pmux cell $procmux$510: { $auto$opt_reduce.cc:137:opt_pmux$2351 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$968: { $auto$opt_reduce.cc:137:opt_pmux$2353 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$1318: { $auto$opt_reduce.cc:137:opt_pmux$2355 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$1301: { $procmux$1353_CMP $auto$opt_reduce.cc:137:opt_pmux$2357 }
+    New ctrl vector for $pmux cell $procmux$1028: { $auto$opt_reduce.cc:137:opt_pmux$2359 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$364: { $auto$opt_reduce.cc:137:opt_pmux$2361 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$1445: { $auto$opt_reduce.cc:137:opt_pmux$2363 $procmux$1477_CMP $procmux$1478_CMP }
+    New ctrl vector for $pmux cell $procmux$540: { $auto$opt_reduce.cc:137:opt_pmux$2365 $procmux$1360_CMP }
+    New ctrl vector for $pmux cell $procmux$736: { $auto$opt_reduce.cc:137:opt_pmux$2367 $procmux$1359_CMP }
+    New ctrl vector for $pmux cell $procmux$770: { $auto$opt_reduce.cc:137:opt_pmux$2369 $procmux$1358_CMP }
+    New ctrl vector for $pmux cell $procmux$465: { $auto$opt_reduce.cc:137:opt_pmux$2371 $procmux$1357_CMP }
+    New ctrl vector for $pmux cell $procmux$1200: { $auto$opt_reduce.cc:137:opt_pmux$2373 $procmux$1356_CMP }
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 67 changes.
+
+4.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 351 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 294 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+<suppressed ~171 debug messages>
+Removed a total of 57 cells.
+
+4.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 866 unused wires.
+<suppressed ~1 debug messages>
+
+4.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~163 debug messages>
+
+4.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 294 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.8.16. Finished fast OPT passes. (There is nothing left to do.)
+
+4.9. Executing FSM pass (extract and optimize FSM).
+
+4.9.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register tt_um_italu.bist_state.
+
+4.9.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\bist_state' from module `\tt_um_italu'.
+  found $adff cell for state register: $procdff$2232
+  root of input selection tree: $0\bist_state[2:0]
+  found reset state: 3'000 (from async reset)
+  found ctrl input: $procmux$238_CMP
+  found ctrl input: $procmux$242_CMP
+  found ctrl input: $procmux$243_CMP
+  found ctrl input: $procmux$246_CMP
+  found ctrl input: \ui_in [7]
+  found ctrl input: $eq$project.v:1157$150_Y
+  found state code: 3'001
+  found state code: 3'011
+  found state code: 3'010
+  found ctrl output: $procmux$243_CMP
+  found ctrl output: $procmux$242_CMP
+  found ctrl output: $procmux$246_CMP
+  found ctrl output: $procmux$238_CMP
+  ctrl inputs: { $eq$project.v:1157$150_Y \ui_in [7] }
+  ctrl outputs: { $procmux$246_CMP $procmux$243_CMP $procmux$242_CMP $procmux$238_CMP $0\bist_state[2:0] }
+  transition:      3'000 2'-0 ->      3'000 7'1000000
+  transition:      3'000 2'-1 ->      3'001 7'1000001
+  transition:      3'010 2'0- ->      3'001 7'0010001
+  transition:      3'010 2'1- ->      3'011 7'0010011
+  transition:      3'001 2'-- ->      3'010 7'0100010
+  transition:      3'011 2'-0 ->      3'000 7'0001000
+  transition:      3'011 2'-1 ->      3'011 7'0001011
+
+4.9.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\bist_state$2374' from module `\tt_um_italu'.
+
+4.9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 9 unused cells and 9 unused wires.
+<suppressed ~10 debug messages>
+
+4.9.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\bist_state$2374' from module `\tt_um_italu'.
+  Removing unused output signal $0\bist_state[2:0] [0].
+  Removing unused output signal $0\bist_state[2:0] [1].
+  Removing unused output signal $0\bist_state[2:0] [2].
+
+4.9.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\bist_state$2374' from module `\tt_um_italu' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  000 -> ---1
+  010 -> --1-
+  001 -> -1--
+  011 -> 1---
+
+4.9.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\bist_state$2374' from module `tt_um_italu':
+-------------------------------------
+
+  Information on FSM $fsm$\bist_state$2374 (\bist_state):
+
+  Number of input signals:    2
+  Number of output signals:   4
+  Number of state bits:       4
+
+  Input signals:
+    0: \ui_in [7]
+    1: $eq$project.v:1157$150_Y
+
+  Output signals:
+    0: $procmux$238_CMP
+    1: $procmux$242_CMP
+    2: $procmux$243_CMP
+    3: $procmux$246_CMP
+
+  State encoding:
+    0:     4'---1  <RESET STATE>
+    1:     4'--1-
+    2:     4'-1--
+    3:     4'1---
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 2'-0   ->     0 4'1000
+      1:     0 2'-1   ->     2 4'1000
+      2:     1 2'0-   ->     2 4'0010
+      3:     1 2'1-   ->     3 4'0010
+      4:     2 2'--   ->     1 4'0100
+      5:     3 2'-0   ->     0 4'0001
+      6:     3 2'-1   ->     3 4'0001
+
+-------------------------------------
+
+4.9.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\bist_state$2374' from module `\tt_um_italu'.
+
+4.10. Executing OPT pass (performing simple optimizations).
+
+4.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~5 debug messages>
+
+4.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 296 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~158 debug messages>
+
+4.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 296 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.10.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$2172 ($adff) from module tt_um_italu (D = $0\scan_reg[63:0], Q = \scan_reg).
+Adding EN signal on $procdff$2212 ($adff) from module tt_um_italu (D = \lfsr [3:0], Q = \bist_op).
+Adding EN signal on $procdff$2147 ($adff) from module tt_um_italu (D = \exec_faulted_value, Q = \alu_result).
+Adding EN signal on $procdff$2207 ($adff) from module tt_um_italu (D = { \lfsr [3:0] \lfsr [7:4] }, Q = \bist_b).
+Adding EN signal on $procdff$2182 ($adff) from module tt_um_italu (D = $add$project.v:1202$153_Y, Q = \fault_counter).
+Adding EN signal on $procdff$2142 ($adff) from module tt_um_italu (D = \serial_reg [19:16], Q = \operation).
+Adding EN signal on $procdff$2227 ($adff) from module tt_um_italu (D = $0\test_pass[0:0], Q = \test_pass).
+Adding EN signal on $procdff$2157 ($adff) from module tt_um_italu (D = \exec_carry, Q = \carry_flag).
+Adding EN signal on $procdff$2137 ($adff) from module tt_um_italu (D = \serial_reg [15:8], Q = \operand_b).
+Adding EN signal on $procdff$2187 ($adff) from module tt_um_italu (D = $0\lfsr[7:0], Q = \lfsr).
+Adding EN signal on $procdff$2132 ($adff) from module tt_um_italu (D = \serial_reg [7:0], Q = \operand_a).
+Adding EN signal on $procdff$2202 ($adff) from module tt_um_italu (D = \lfsr, Q = \bist_a).
+Adding EN signal on $procdff$2162 ($adff) from module tt_um_italu (D = \exec_faulted_value [7], Q = \negative_flag).
+Adding EN signal on $procdff$2127 ($adff) from module tt_um_italu (D = { \ui_in [0] \serial_reg [19:1] }, Q = \serial_reg).
+Adding EN signal on $procdff$2167 ($adff) from module tt_um_italu (D = \exec_overflow, Q = \overflow_flag).
+Adding EN signal on $procdff$2152 ($adff) from module tt_um_italu (D = $eq$project.v:1359$159_Y, Q = \zero_flag).
+Adding EN signal on $procdff$2177 ($adff) from module tt_um_italu (D = $0\scan_out[0:0], Q = \scan_out).
+Adding EN signal on $procdff$2197 ($adff) from module tt_um_italu (D = $0\bist_pattern_count[7:0], Q = \bist_pattern_count).
+Adding EN signal on $procdff$2217 ($adff) from module tt_um_italu (D = $0\bist_fault[0:0], Q = \bist_fault).
+Adding EN signal on $procdff$2192 ($adff) from module tt_um_italu (D = $0\misr[7:0], Q = \misr).
+Adding EN signal on $procdff$2222 ($adff) from module tt_um_italu (D = $0\bist_done[0:0], Q = \bist_done).
+
+4.10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 14 unused cells and 24 unused wires.
+<suppressed ~15 debug messages>
+
+4.10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~8 debug messages>
+
+4.10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~133 debug messages>
+
+4.10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 306 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 295 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 294 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+4.10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 12 unused wires.
+<suppressed ~1 debug messages>
+
+4.10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.10.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~137 debug messages>
+
+4.10.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.10.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 294 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.10.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.10.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.10.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.10.23. Finished fast OPT passes. (There is nothing left to do.)
+
+4.11. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell tt_um_italu.$auto$opt_dff.cc:320:make_patterns_logic$2456 ($ne).
+Removed top 1 bits (of 9) from port A of cell tt_um_italu.$add$project.v:534$84 ($add).
+Removed top 1 bits (of 9) from port B of cell tt_um_italu.$add$project.v:534$84 ($add).
+Removed top 7 bits (of 8) from port B of cell tt_um_italu.$add$project.v:719$111 ($add).
+Removed top 7 bits (of 8) from port B of cell tt_um_italu.$add$project.v:1167$151 ($add).
+Removed top 7 bits (of 8) from port B of cell tt_um_italu.$add$project.v:1202$153 ($add).
+Removed top 1 bits (of 2) from port B of cell tt_um_italu.$procmux$204_CMP0 ($eq).
+Removed top 7 bits (of 8) from mux cell tt_um_italu.$procmux$848 ($mux).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$861_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$862_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$863_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$864_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell tt_um_italu.$procmux$865_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell tt_um_italu.$procmux$866_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell tt_um_italu.$procmux$867_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell tt_um_italu.$procmux$1357_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell tt_um_italu.$procmux$1358_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell tt_um_italu.$procmux$1359_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell tt_um_italu.$procmux$1369_CMP0 ($eq).
+Removed top 7 bits (of 8) from mux cell tt_um_italu.$procmux$1424 ($mux).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$1471_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$1472_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$1473_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_italu.$procmux$1474_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell tt_um_italu.$procmux$1475_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell tt_um_italu.$procmux$1476_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell tt_um_italu.$procmux$1477_CMP0 ($eq).
+Removed top 7 bits (of 8) from wire tt_um_italu.$2\bist_expected[7:0].
+Removed top 7 bits (of 8) from wire tt_um_italu.$2\exec_value[7:0].
+Removed top 6 bits (of 64) from wire tt_um_italu.scan_state.
+
+4.12. Executing PEEPOPT pass (run peephole optimizers).
+
+4.13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+4.14. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module tt_um_italu:
+  creating $macc model for $add$project.v:1202$153 ($add).
+  creating $macc model for $add$project.v:1167$151 ($add).
+  creating $macc model for $sub$project.v:843$125 ($sub).
+  creating $macc model for $add$project.v:839$124 ($add).
+  creating $macc model for $add$project.v:719$111 ($add).
+  creating $macc model for $sub$project.v:557$92 ($sub).
+  creating $macc model for $add$project.v:534$84 ($add).
+  creating $alu model for $macc $add$project.v:534$84.
+  creating $alu model for $macc $sub$project.v:557$92.
+  creating $alu model for $macc $add$project.v:719$111.
+  creating $alu model for $macc $add$project.v:839$124.
+  creating $alu model for $macc $sub$project.v:843$125.
+  creating $alu model for $macc $add$project.v:1167$151.
+  creating $alu model for $macc $add$project.v:1202$153.
+  creating $alu model for $gt$project.v:831$123 ($gt): merged with $sub$project.v:843$125.
+  creating $alu model for $lt$project.v:824$122 ($lt): merged with $sub$project.v:843$125.
+  creating $alu model for $lt$project.v:816$121 ($lt): merged with $sub$project.v:843$125.
+  creating $alu model for $gt$project.v:525$83 ($gt): merged with $sub$project.v:557$92.
+  creating $alu model for $lt$project.v:518$82 ($lt): merged with $sub$project.v:557$92.
+  creating $alu model for $lt$project.v:510$81 ($lt): merged with $sub$project.v:557$92.
+  creating $alu model for $ge$project.v:456$66 ($ge): merged with $sub$project.v:557$92.
+  creating $alu cell for $add$project.v:1202$153: $auto$alumacc.cc:512:replace_alu$2480
+  creating $alu cell for $add$project.v:1167$151: $auto$alumacc.cc:512:replace_alu$2483
+  creating $alu cell for $sub$project.v:843$125, $gt$project.v:831$123, $lt$project.v:824$122, $lt$project.v:816$121: $auto$alumacc.cc:512:replace_alu$2486
+  creating $alu cell for $add$project.v:839$124: $auto$alumacc.cc:512:replace_alu$2501
+  creating $alu cell for $add$project.v:719$111: $auto$alumacc.cc:512:replace_alu$2504
+  creating $alu cell for $sub$project.v:557$92, $gt$project.v:525$83, $lt$project.v:518$82, $lt$project.v:510$81, $ge$project.v:456$66: $auto$alumacc.cc:512:replace_alu$2507
+  creating $alu cell for $add$project.v:534$84: $auto$alumacc.cc:512:replace_alu$2524
+  created 7 $alu and 0 $macc cells.
+
+4.15. Executing SHARE pass (SAT-based resource sharing).
+
+4.16. Executing OPT pass (performing simple optimizations).
+
+4.16.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~4 debug messages>
+
+4.16.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 300 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~137 debug messages>
+
+4.16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.16.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 300 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.16.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.16.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 1 unused cells and 8 unused wires.
+<suppressed ~2 debug messages>
+
+4.16.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.16.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.16.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~137 debug messages>
+
+4.16.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.16.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 299 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.16.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.16.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.16.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.16.16. Finished fast OPT passes. (There is nothing left to do.)
+
+4.17. Executing MEMORY pass.
+
+4.17.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+4.17.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+4.17.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+4.17.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+4.17.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+4.17.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.17.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+4.17.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+4.17.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.17.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.19. Executing OPT pass (performing simple optimizations).
+
+4.19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~115 debug messages>
+
+4.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 286 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.19.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 14 unused cells and 27 unused wires.
+<suppressed ~15 debug messages>
+
+4.19.5. Finished fast OPT passes.
+
+4.20. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+4.21. Executing OPT pass (performing simple optimizations).
+
+4.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~1 debug messages>
+
+4.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    Consolidated identical input bits for $mux cell $procmux$232:
+      Old ports: A={ 1'0 \scan_reg [63:1] }, B={ 6'000000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0]
+      New ports: A=\scan_reg [63:1], B={ 5'00000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [62:0]
+      New connections: $0\scan_reg[63:0] [63] = 1'0
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 1 changes.
+
+4.21.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.6. Executing OPT_SHARE pass.
+
+4.21.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+4.21.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.14. Executing OPT_SHARE pass.
+
+4.21.15. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 63 on $auto$ff.cc:337:slice$2408 ($adffe) from module tt_um_italu.
+
+4.21.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    Consolidated identical input bits for $mux cell $procmux$232:
+      Old ports: A={ 1'0 \scan_reg [62:1] }, B={ 5'00000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [62:0]
+      New ports: A=\scan_reg [62:1], B={ 4'0000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [61:0]
+      New connections: $0\scan_reg[63:0] [62] = 1'0
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 1 changes.
+
+4.21.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.22. Executing OPT_SHARE pass.
+
+4.21.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.30. Executing OPT_SHARE pass.
+
+4.21.31. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 62 on $auto$ff.cc:337:slice$2527 ($adffe) from module tt_um_italu.
+
+4.21.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.34. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.35. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.36. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    Consolidated identical input bits for $mux cell $procmux$232:
+      Old ports: A={ 1'0 \scan_reg [61:1] }, B={ 4'0000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [61:0]
+      New ports: A=\scan_reg [61:1], B={ 3'000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [60:0]
+      New connections: $0\scan_reg[63:0] [61] = 1'0
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 1 changes.
+
+4.21.37. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.38. Executing OPT_SHARE pass.
+
+4.21.39. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.42. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.43. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.44. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.45. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.46. Executing OPT_SHARE pass.
+
+4.21.47. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 61 on $auto$ff.cc:337:slice$2528 ($adffe) from module tt_um_italu.
+
+4.21.48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.49. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.50. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.51. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.52. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    Consolidated identical input bits for $mux cell $procmux$232:
+      Old ports: A={ 1'0 \scan_reg [60:1] }, B={ 3'000 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [60:0]
+      New ports: A=\scan_reg [60:1], B={ 2'00 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [59:0]
+      New connections: $0\scan_reg[63:0] [60] = 1'0
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 1 changes.
+
+4.21.53. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.54. Executing OPT_SHARE pass.
+
+4.21.55. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.56. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.58. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.59. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.60. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.61. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.62. Executing OPT_SHARE pass.
+
+4.21.63. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 60 on $auto$ff.cc:337:slice$2529 ($adffe) from module tt_um_italu.
+
+4.21.64. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.65. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.66. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.67. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.68. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    Consolidated identical input bits for $mux cell $procmux$232:
+      Old ports: A={ 1'0 \scan_reg [59:1] }, B={ 2'00 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [59:0]
+      New ports: A=\scan_reg [59:1], B={ 1'0 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [58:0]
+      New connections: $0\scan_reg[63:0] [59] = 1'0
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 1 changes.
+
+4.21.69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.70. Executing OPT_SHARE pass.
+
+4.21.71. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.72. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.73. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.74. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.75. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.76. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.77. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.78. Executing OPT_SHARE pass.
+
+4.21.79. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 59 on $auto$ff.cc:337:slice$2530 ($adffe) from module tt_um_italu.
+
+4.21.80. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.81. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.82. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.83. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.84. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+    Consolidated identical input bits for $mux cell $procmux$232:
+      Old ports: A={ 1'0 \scan_reg [58:1] }, B={ 1'0 \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [58:0]
+      New ports: A=\scan_reg [58:1], B={ \cycle_counter \fault_counter \test_pass \bist_done \misr \overflow_flag \negative_flag \carry_flag \zero_flag \alu_result \operation \operand_b \operand_a }, Y=$0\scan_reg[63:0] [57:0]
+      New connections: $0\scan_reg[63:0] [58] = 1'0
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 1 changes.
+
+4.21.85. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.86. Executing OPT_SHARE pass.
+
+4.21.87. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.88. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.89. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.90. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.91. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.92. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.93. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.94. Executing OPT_SHARE pass.
+
+4.21.95. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 58 on $auto$ff.cc:337:slice$2531 ($adffe) from module tt_um_italu.
+
+4.21.96. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.97. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.98. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.21.99. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~98 debug messages>
+
+4.21.100. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+4.21.101. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 271 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.21.102. Executing OPT_SHARE pass.
+
+4.21.103. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21.104. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+4.21.105. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.21.106. Finished fast OPT passes. (There is nothing left to do.)
+
+4.22. Executing TECHMAP pass (map to technology primitives).
+
+4.22.1. Executing Verilog-2005 frontend: /foss/tools/yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/foss/tools/yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+4.22.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using template $paramod$4ccbe221165818e15f326ddee3d1183c7924e12f\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$a1bc51c02ce12ac21eb18988e83292af48ed7d72\_90_alu for cells of type $alu.
+Using template $paramod$c3cd1564c35d873179656addd6052d7ea8b6d991\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001001 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~940 debug messages>
+
+4.23. Executing OPT pass (performing simple optimizations).
+
+4.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+<suppressed ~604 debug messages>
+
+4.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 1795 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 1621 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 1547 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 1529 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 1523 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 1522 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Computing hashes of 1521 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+<suppressed ~822 debug messages>
+Removed a total of 274 cells.
+
+4.23.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 26 unused cells and 648 unused wires.
+<suppressed ~27 debug messages>
+
+4.23.5. Finished fast OPT passes.
+
+4.24. Executing ABC pass (technology mapping using ABC).
+
+4.24.1. Extracting gate netlist of module `\tt_um_italu' to `<abc-temp-dir>/input.blif'..
+
+4.24.1.1. Executed ABC.
+Extracted 1330 gates and 1507 wires to a netlist network with 175 inputs and 129 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Jul 27 2026 18:12:25)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+4.24.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:      295
+ABC RESULTS:            ANDNOT cells:       36
+ABC RESULTS:               MUX cells:       79
+ABC RESULTS:              NAND cells:      327
+ABC RESULTS:               NOR cells:       19
+ABC RESULTS:               NOT cells:        9
+ABC RESULTS:                OR cells:       70
+ABC RESULTS:             ORNOT cells:       50
+ABC RESULTS:              XNOR cells:       24
+ABC RESULTS:               XOR cells:       23
+ABC RESULTS:        internal signals:     1203
+ABC RESULTS:           input signals:      175
+ABC RESULTS:          output signals:      129
+Removing temp directory.
+Removing global temp directory.
+
+4.25. Executing OPT pass (performing simple optimizations).
+
+4.25.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+4.25.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 1097 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+4.25.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.25.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 1009 unused wires.
+<suppressed ~6 debug messages>
+
+4.25.5. Finished fast OPT passes.
+
+4.26. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `tt_um_italu'. Setting top module to tt_um_italu.
+
+4.26.1. Analyzing design hierarchy..
+Top module:  \tt_um_italu
+
+4.26.2. Analyzing design hierarchy..
+Top module:  \tt_um_italu
+Removed 0 unused modules.
+
+4.27. Printing statistics.
+
+=== tt_um_italu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      873 wires
+     1273 wire bits
+       49 public wires
+      337 public wire bits
+        8 ports
+       43 port bits
+     1097 cells
+       36   $_ANDNOT_
+      295   $_AND_
+      151   $_DFFE_PN0P_
+        2   $_DFFE_PN1P_
+       11   $_DFF_PN0_
+        1   $_DFF_PN1_
+       79   $_MUX_
+      327   $_NAND_
+       19   $_NOR_
+        9   $_NOT_
+       50   $_ORNOT_
+       70   $_OR_
+       24   $_XNOR_
+       23   $_XOR_
+
+4.28. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_italu...
+Found and reported 0 problems.
+
+5. Executing OPT pass (performing simple optimizations).
+
+5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 1097 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 1097 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+5.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~16 debug messages>
+
+5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+5.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_italu..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_italu.
+Performed a total of 0 changes.
+
+5.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_italu'.
+Computing hashes of 1097 cells of `\tt_um_italu'.
+Finding duplicate cells in `\tt_um_italu'.
+Removed a total of 0 cells.
+
+5.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+
+5.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_italu.
+
+5.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sg13g2_dfrbpq_1 (noninv, pins=4, area=48.99) is a direct match for cell type $_DFF_PN0_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    unmapped dff cell: $_DFF_P_
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sg13g2_dfrbpq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+6.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~4 debug messages>
+Mapping DFF cells in module `\tt_um_italu':
+  mapped 165 $_DFF_PN0_ cells to \sg13g2_dfrbpq_1 cells.
+
+7. Executing ABC pass (technology mapping using ABC).
+
+7.1. Extracting gate netlist of module `\tt_um_italu' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_a12c89cb.scl (1 files)
+
+7.1.1. Executed ABC.
+Extracted 1091 gates and 1270 wires to a netlist network with 179 inputs and 172 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Jul 27 2026 18:12:25)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_a12c89cb.scl 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+7.1.2. Re-integrating ABC results.
+ABC RESULTS:     sg13g2_a21o_1 cells:       12
+ABC RESULTS:    sg13g2_a21oi_1 cells:      102
+ABC RESULTS:   sg13g2_a221oi_1 cells:       47
+ABC RESULTS:    sg13g2_a22oi_1 cells:       63
+ABC RESULTS:     sg13g2_and2_1 cells:       36
+ABC RESULTS:     sg13g2_and3_1 cells:        5
+ABC RESULTS:     sg13g2_and4_1 cells:        2
+ABC RESULTS:      sg13g2_inv_1 cells:       92
+ABC RESULTS:     sg13g2_mux2_1 cells:       33
+ABC RESULTS:    sg13g2_nand2_1 cells:       89
+ABC RESULTS:   sg13g2_nand2b_1 cells:       56
+ABC RESULTS:    sg13g2_nand3_1 cells:       33
+ABC RESULTS:   sg13g2_nand3b_1 cells:        3
+ABC RESULTS:    sg13g2_nand4_1 cells:       14
+ABC RESULTS:     sg13g2_nor2_1 cells:       88
+ABC RESULTS:    sg13g2_nor2b_1 cells:       26
+ABC RESULTS:     sg13g2_nor3_1 cells:       20
+ABC RESULTS:     sg13g2_nor4_1 cells:        4
+ABC RESULTS:    sg13g2_o21ai_1 cells:      117
+ABC RESULTS:      sg13g2_or2_1 cells:       19
+ABC RESULTS:      sg13g2_or3_1 cells:        5
+ABC RESULTS:      sg13g2_or4_1 cells:        2
+ABC RESULTS:    sg13g2_xnor2_1 cells:       33
+ABC RESULTS:     sg13g2_xor2_1 cells:       10
+ABC RESULTS:        internal signals:      919
+ABC RESULTS:           input signals:      179
+ABC RESULTS:          output signals:      172
+Removing temp directory.
+Removing global temp directory.
+
+8. Executing SETUNDEF pass (replace undef values with defined constants).
+
+9. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_italu..
+Removed 0 unused cells and 1298 unused wires.
+<suppressed ~20 debug messages>
+
+11. Executing AUTONAME pass.
+Renamed 1982 objects in module tt_um_italu (362 iterations).
+<suppressed ~1982 debug messages>
+
+12. Printing statistics.
+
+=== tt_um_italu ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1069        - wires
+     1104        - wire bits
+     1069        - public wires
+     1104        - public wire bits
+        8        - ports
+       43        - port bits
+     1076 1.67E+04 cells
+       12   152.41   sg13g2_a21o_1
+      102  925.344   sg13g2_a21oi_1
+       47  682.214   sg13g2_a221oi_1
+       63  683.462   sg13g2_a22oi_1
+       36  326.592   sg13g2_and2_1
+        5   63.504   sg13g2_and3_1
+        2    29.03   sg13g2_and4_1
+      165 8.08E+03   sg13g2_dfrbpq_1
+       92  500.774   sg13g2_inv_1
+       33  598.752   sg13g2_mux2_1
+       89  645.926   sg13g2_nand2_1
+       56  508.032   sg13g2_nand2b_1
+       33  299.376   sg13g2_nand3_1
+        3   38.102   sg13g2_nand3b_1
+       14   152.41   sg13g2_nand4_1
+       88  638.669   sg13g2_nor2_1
+       26  235.872   sg13g2_nor2b_1
+       20   181.44   sg13g2_nor3_1
+        4   43.546   sg13g2_nor4_1
+      117 1.06E+03   sg13g2_o21ai_1
+       19  172.368   sg13g2_or2_1
+        5   63.504   sg13g2_or3_1
+        2    29.03   sg13g2_or4_1
+       33  479.002   sg13g2_xnor2_1
+       10  145.152   sg13g2_xor2_1
+
+   Chip area for module '\tt_um_italu': 16739.087400
+     of which used for sequential elements: 8083.152000 (48.29%)
+
+13. Executing Verilog backend.
+
+13.1. Executing BMUXMAP pass.
+
+13.2. Executing DEMUXMAP pass.
+Dumping module `\tt_um_italu'.
+
+14. Executing JSON backend.
+
+End of script. Logfile hash: 0f36b3efe3, time: 1.99s, user: 0.94s, system: 0.16s, MEM: 48.54 MB peak
+Yosys 0.67 (git sha1 2d1509d1b, Release, GNU /usr/bin/c++ 13.3.0)
+Time spent: 28% 2x abc (0 sec), 14% 34x opt_clean (0 sec), ...

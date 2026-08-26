@@ -1,0 +1,317 @@
+Startpoint: scan_reg[56]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: scan_reg[55]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.378    0.378   clock network delay (propagated)
+   0.000    0.378 ^ scan_reg[56]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.175    0.553 v scan_reg[56]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.030    0.583 ^ scan_reg[56]_sg13g2_inv_1_A/Y (sg13g2_inv_1)
+   0.044    0.627 v scan_reg[55]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    0.627 v scan_reg[55]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.627   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.388    0.388   clock network delay (propagated)
+   0.100    0.488   clock uncertainty
+  -0.008    0.480   clock reconvergence pessimism
+            0.480 ^ scan_reg[55]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.030    0.450   library hold time
+            0.450   data required time
+-----------------------------------------------------------
+            0.450   data required time
+           -0.627   data arrival time
+-----------------------------------------------------------
+            0.177   slack (MET)
+
+
+Startpoint: lfsr[1]_sg13g2_a22oi_1_A1_B2_sg13g2_inv_1_Y_A_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: bist_a[0]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.380    0.380   clock network delay (propagated)
+   0.000    0.380 ^ lfsr[1]_sg13g2_a22oi_1_A1_B2_sg13g2_inv_1_Y_A_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.191    0.571 ^ lfsr[1]_sg13g2_a22oi_1_A1_B2_sg13g2_inv_1_Y_A_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.055    0.625 v bist_a[0]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    0.626 v bist_a[0]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.626   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.391    0.391   clock network delay (propagated)
+   0.100    0.491   clock uncertainty
+  -0.011    0.480   clock reconvergence pessimism
+            0.480 ^ bist_a[0]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.032    0.448   library hold time
+            0.448   data required time
+-----------------------------------------------------------
+            0.448   data required time
+           -0.626   data arrival time
+-----------------------------------------------------------
+            0.178   slack (MET)
+
+
+Startpoint: scan_reg[46]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: scan_reg[45]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.379    0.379   clock network delay (propagated)
+   0.000    0.379 ^ scan_reg[46]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.167    0.546 v scan_reg[46]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.037    0.583 ^ scan_reg[46]_sg13g2_inv_1_A/Y (sg13g2_inv_1)
+   0.055    0.639 v scan_reg[45]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    0.639 v scan_reg[45]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.639   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.395    0.395   clock network delay (propagated)
+   0.100    0.495   clock uncertainty
+  -0.005    0.490   clock reconvergence pessimism
+            0.490 ^ scan_reg[45]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.030    0.460   library hold time
+            0.460   data required time
+-----------------------------------------------------------
+            0.460   data required time
+           -0.639   data arrival time
+-----------------------------------------------------------
+            0.179   slack (MET)
+
+
+Startpoint: lfsr[2]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: bist_a[2]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.380    0.380   clock network delay (propagated)
+   0.000    0.380 ^ lfsr[2]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.186    0.565 v lfsr[2]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.038    0.603 ^ lfsr[2]_sg13g2_nand2_1_A/Y (sg13g2_nand2_1)
+   0.038    0.641 v bist_a[2]_sg13g2_dfrbpq_1_Q_D_sg13g2_o21ai_1_Y/Y (sg13g2_o21ai_1)
+   0.000    0.641 v bist_a[2]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.641   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.395    0.395   clock network delay (propagated)
+   0.100    0.495   clock uncertainty
+  -0.005    0.491   clock reconvergence pessimism
+            0.491 ^ bist_a[2]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.031    0.459   library hold time
+            0.459   data required time
+-----------------------------------------------------------
+            0.459   data required time
+           -0.641   data arrival time
+-----------------------------------------------------------
+            0.182   slack (MET)
+
+
+Startpoint: scan_reg[0]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: scan_reg[0]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.384    0.384   clock network delay (propagated)
+   0.000    0.384 ^ scan_reg[0]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.177    0.561 v scan_reg[0]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.030    0.590 ^ scan_reg[0]_sg13g2_inv_1_A/Y (sg13g2_inv_1)
+   0.047    0.638 v scan_reg[0]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    0.638 v scan_reg[0]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.638   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.394    0.394   clock network delay (propagated)
+   0.100    0.494   clock uncertainty
+  -0.011    0.484   clock reconvergence pessimism
+            0.484 ^ scan_reg[0]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.030    0.454   library hold time
+            0.454   data required time
+-----------------------------------------------------------
+            0.454   data required time
+           -0.638   data arrival time
+-----------------------------------------------------------
+            0.184   slack (MET)
+
+
+Startpoint: fault_counter[7]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: fault_counter[7]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.387    0.387   clock network delay (propagated)
+   0.000    0.387 ^ fault_counter[7]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.192    0.579 v fault_counter[7]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.063    0.641 v fault_counter[7]_sg13g2_dfrbpq_1_Q_D_sg13g2_xnor2_1_Y/Y (sg13g2_xnor2_1)
+   0.000    0.641 v fault_counter[7]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.641   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.398    0.398   clock network delay (propagated)
+   0.100    0.498   clock uncertainty
+  -0.011    0.487   clock reconvergence pessimism
+            0.487 ^ fault_counter[7]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.032    0.455   library hold time
+            0.455   data required time
+-----------------------------------------------------------
+            0.455   data required time
+           -0.641   data arrival time
+-----------------------------------------------------------
+            0.186   slack (MET)
+
+
+Startpoint: scan_reg[12]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: scan_reg[11]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.383    0.383   clock network delay (propagated)
+   0.000    0.383 ^ scan_reg[12]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.169    0.552 v scan_reg[12]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.044    0.595 ^ scan_reg[12]_sg13g2_inv_1_A/Y (sg13g2_inv_1)
+   0.053    0.648 v scan_reg[11]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    0.648 v scan_reg[11]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.648   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.397    0.397   clock network delay (propagated)
+   0.100    0.497   clock uncertainty
+  -0.008    0.489   clock reconvergence pessimism
+            0.489 ^ scan_reg[11]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.029    0.460   library hold time
+            0.460   data required time
+-----------------------------------------------------------
+            0.460   data required time
+           -0.648   data arrival time
+-----------------------------------------------------------
+            0.187   slack (MET)
+
+
+Startpoint: scan_reg[42]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: scan_reg[41]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.384    0.384   clock network delay (propagated)
+   0.000    0.384 ^ scan_reg[42]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.167    0.551 v scan_reg[42]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.037    0.588 ^ scan_reg[42]_sg13g2_inv_1_A/Y (sg13g2_inv_1)
+   0.062    0.650 v scan_reg[41]_sg13g2_dfrbpq_1_Q_D_sg13g2_a221oi_1_Y/Y (sg13g2_a221oi_1)
+   0.000    0.650 v scan_reg[41]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.650   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.400    0.400   clock network delay (propagated)
+   0.100    0.500   clock uncertainty
+  -0.008    0.492   clock reconvergence pessimism
+            0.492 ^ scan_reg[41]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.031    0.461   library hold time
+            0.461   data required time
+-----------------------------------------------------------
+            0.461   data required time
+           -0.650   data arrival time
+-----------------------------------------------------------
+            0.189   slack (MET)
+
+
+Startpoint: fault_counter[6]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: fault_counter[6]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.387    0.387   clock network delay (propagated)
+   0.000    0.387 ^ fault_counter[6]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.194    0.581 v fault_counter[6]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.063    0.644 v fault_counter[6]_sg13g2_dfrbpq_1_Q_D_sg13g2_xnor2_1_Y/Y (sg13g2_xnor2_1)
+   0.000    0.644 v fault_counter[6]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.644   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.398    0.398   clock network delay (propagated)
+   0.100    0.498   clock uncertainty
+  -0.011    0.487   clock reconvergence pessimism
+            0.487 ^ fault_counter[6]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.032    0.455   library hold time
+            0.455   data required time
+-----------------------------------------------------------
+            0.455   data required time
+           -0.644   data arrival time
+-----------------------------------------------------------
+            0.189   slack (MET)
+
+
+Startpoint: scan_reg[10]_sg13g2_dfrbpq_1_Q
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: scan_reg[10]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.401    0.401   clock network delay (propagated)
+   0.000    0.401 ^ scan_reg[10]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+   0.189    0.589 v scan_reg[10]_sg13g2_dfrbpq_1_Q/Q (sg13g2_dfrbpq_1)
+   0.031    0.621 ^ scan_reg[10]_sg13g2_inv_1_A/Y (sg13g2_inv_1)
+   0.045    0.666 v scan_reg[10]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    0.666 v scan_reg[10]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            0.666   data arrival time
+
+   0.000    0.000   clock clk (rise edge)
+   0.412    0.412   clock network delay (propagated)
+   0.100    0.512   clock uncertainty
+  -0.011    0.501   clock reconvergence pessimism
+            0.501 ^ scan_reg[10]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.025    0.476   library hold time
+            0.476   data required time
+-----------------------------------------------------------
+            0.476   data required time
+           -0.666   data arrival time
+-----------------------------------------------------------
+            0.190   slack (MET)
+
+

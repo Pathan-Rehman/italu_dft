@@ -1,0 +1,21 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO IFP-0001] Added 39 rows of 409 site CoreSite.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 202.080 154.980 ) um
+[INFO IFP-0101] Core BBox: (  2.880  3.780 ) ( 199.200 151.200 ) um
+[INFO IFP-0102] Core area:                        28941.494 um^2
+[INFO IFP-0103] Total instances area:             16741.469 um^2
+[INFO IFP-0104] Effective utilization:                0.578
+[INFO IFP-0105] Number of instances:                   1076
+
+================ FLOORPLAN SUMMARY ================
+Design area 16741 um^2 58% utilization.
+Die:  0 0 -> 202080 154980 (DBU)
+Core: 2880 3780 -> 199200 151200 (DBU)
+Rows: 39
+===================================================
+

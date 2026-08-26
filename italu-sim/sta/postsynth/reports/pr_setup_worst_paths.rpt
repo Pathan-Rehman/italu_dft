@@ -1,0 +1,303 @@
+Startpoint: uio_in[7] (input port clocked by clk)
+Endpoint: uio_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.063    2.063 ^ uio_in[7] (in)
+   0.340    2.403 ^ misr[4]_sg13g2_a22oi_1_B2_A2_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.156    2.559 v uio_out_sg13g2_nand2_1_Y_4_B_sg13g2_a22oi_1_Y/Y (sg13g2_a22oi_1)
+   0.217    2.776 ^ uio_out_sg13g2_nand2_1_Y_4/Y (sg13g2_nand2_1)
+   0.004    2.780 ^ uio_out[0] (out)
+            2.780   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.780   data arrival time
+-----------------------------------------------------------
+           15.120   slack (MET)
+
+
+Startpoint: uio_in[7] (input port clocked by clk)
+Endpoint: uio_out[5] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.063    2.063 ^ uio_in[7] (in)
+   0.340    2.403 ^ misr[4]_sg13g2_a22oi_1_B2_A2_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.156    2.559 v uio_out_sg13g2_nand2_1_Y_6_A_sg13g2_a22oi_1_Y/Y (sg13g2_a22oi_1)
+   0.215    2.775 ^ uio_out_sg13g2_nand2_1_Y_6/Y (sg13g2_nand2_1)
+   0.004    2.779 ^ uio_out[5] (out)
+            2.779   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.779   data arrival time
+-----------------------------------------------------------
+           15.121   slack (MET)
+
+
+Startpoint: uio_in[6] (input port clocked by clk)
+Endpoint: uio_out[6] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.062    2.062 ^ uio_in[6] (in)
+   0.346    2.408 ^ misr[4]_sg13g2_a22oi_1_B2_B1_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.144    2.552 v uio_out_sg13g2_nand2_1_Y_5_B_sg13g2_a22oi_1_Y/Y (sg13g2_a22oi_1)
+   0.216    2.767 ^ uio_out_sg13g2_nand2_1_Y_5/Y (sg13g2_nand2_1)
+   0.006    2.773 ^ uio_out[6] (out)
+            2.773   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.773   data arrival time
+-----------------------------------------------------------
+           15.127   slack (MET)
+
+
+Startpoint: uio_in[7] (input port clocked by clk)
+Endpoint: uio_out[4] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.063    2.063 ^ uio_in[7] (in)
+   0.340    2.403 ^ misr[4]_sg13g2_a22oi_1_B2_A2_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.152    2.555 v misr[4]_sg13g2_a22oi_1_B2/Y (sg13g2_a22oi_1)
+   0.214    2.769 ^ uio_out_sg13g2_nand2_1_Y_7/Y (sg13g2_nand2_1)
+   0.004    2.773 ^ uio_out[4] (out)
+            2.773   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.773   data arrival time
+-----------------------------------------------------------
+           15.127   slack (MET)
+
+
+Startpoint: uio_in[7] (input port clocked by clk)
+Endpoint: uio_out[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.063    2.063 ^ uio_in[7] (in)
+   0.340    2.403 ^ misr[4]_sg13g2_a22oi_1_B2_A2_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.154    2.557 v uio_out_sg13g2_nand2_1_Y_B_sg13g2_a22oi_1_Y/Y (sg13g2_a22oi_1)
+   0.209    2.767 ^ uio_out_sg13g2_nand2_1_Y/Y (sg13g2_nand2_1)
+   0.003    2.770 ^ uio_out[7] (out)
+            2.770   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.770   data arrival time
+-----------------------------------------------------------
+           15.130   slack (MET)
+
+
+Startpoint: uio_in[6] (input port clocked by clk)
+Endpoint: uio_out[3] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.062    2.062 ^ uio_in[6] (in)
+   0.346    2.408 ^ misr[4]_sg13g2_a22oi_1_B2_B1_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.139    2.548 v uio_out_sg13g2_nand2_1_Y_1_A_sg13g2_a22oi_1_Y/Y (sg13g2_a22oi_1)
+   0.214    2.762 ^ uio_out_sg13g2_nand2_1_Y_1/Y (sg13g2_nand2_1)
+   0.004    2.766 ^ uio_out[3] (out)
+            2.766   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.766   data arrival time
+-----------------------------------------------------------
+           15.134   slack (MET)
+
+
+Startpoint: uio_in[6] (input port clocked by clk)
+Endpoint: uio_out[2] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.062    2.062 ^ uio_in[6] (in)
+   0.346    2.408 ^ misr[4]_sg13g2_a22oi_1_B2_B1_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.137    2.545 v uio_out_sg13g2_nand2_1_Y_2_A_sg13g2_a22oi_1_Y/Y (sg13g2_a22oi_1)
+   0.213    2.758 ^ uio_out_sg13g2_nand2_1_Y_2/Y (sg13g2_nand2_1)
+   0.004    2.762 ^ uio_out[2] (out)
+            2.762   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.762   data arrival time
+-----------------------------------------------------------
+           15.138   slack (MET)
+
+
+Startpoint: uio_in[6] (input port clocked by clk)
+Endpoint: uio_out[1] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.062    2.062 ^ uio_in[6] (in)
+   0.346    2.408 ^ misr[4]_sg13g2_a22oi_1_B2_B1_sg13g2_nor2b_1_Y/Y (sg13g2_nor2b_1)
+   0.134    2.542 v misr[1]_sg13g2_a22oi_1_B2/Y (sg13g2_a22oi_1)
+   0.215    2.757 ^ uio_out_sg13g2_nand2_1_Y_3/Y (sg13g2_nand2_1)
+   0.004    2.761 ^ uio_out[1] (out)
+            2.761   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock network delay (propagated)
+  -0.100   19.900   clock uncertainty
+   0.000   19.900   clock reconvergence pessimism
+  -2.000   17.900   output external delay
+           17.900   data required time
+-----------------------------------------------------------
+           17.900   data required time
+           -2.761   data arrival time
+-----------------------------------------------------------
+           15.139   slack (MET)
+
+
+Startpoint: ui_in[3] (input port clocked by clk)
+Endpoint: scan_reg[1]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 v input external delay
+   0.759    2.759 v ui_in[3] (in)
+   1.651    4.410 ^ scan_reg[27]_sg13g2_dfrbpq_1_Q_D_sg13g2_o21ai_1_Y_A1_sg13g2_nor2_1_B/Y (sg13g2_nor2_1)
+   0.353    4.764 v scan_reg[1]_sg13g2_dfrbpq_1_Q_D_sg13g2_a21oi_1_Y/Y (sg13g2_a21oi_1)
+   0.000    4.764 v scan_reg[1]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            4.764   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.380   20.380   clock network delay (propagated)
+  -0.100   20.280   clock uncertainty
+   0.000   20.280   clock reconvergence pessimism
+           20.280 ^ scan_reg[1]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.187   20.093   library setup time
+           20.093   data required time
+-----------------------------------------------------------
+           20.093   data required time
+           -4.764   data arrival time
+-----------------------------------------------------------
+           15.329   slack (MET)
+
+
+Startpoint: ui_in[3] (input port clocked by clk)
+Endpoint: scan_reg[38]_sg13g2_dfrbpq_1_Q
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 v input external delay
+   0.759    2.759 v ui_in[3] (in)
+   1.651    4.410 ^ scan_reg[27]_sg13g2_dfrbpq_1_Q_D_sg13g2_o21ai_1_Y_A1_sg13g2_nor2_1_B/Y (sg13g2_nor2_1)
+   0.301    4.712 v scan_reg[39]_sg13g2_a22oi_1_B2/Y (sg13g2_a22oi_1)
+   0.083    4.795 ^ scan_reg[38]_sg13g2_dfrbpq_1_Q_D_sg13g2_o21ai_1_Y/Y (sg13g2_o21ai_1)
+   0.000    4.795 ^ scan_reg[38]_sg13g2_dfrbpq_1_Q/D (sg13g2_dfrbpq_1)
+            4.795   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.383   20.383   clock network delay (propagated)
+  -0.100   20.283   clock uncertainty
+   0.000   20.283   clock reconvergence pessimism
+           20.283 ^ scan_reg[38]_sg13g2_dfrbpq_1_Q/CLK (sg13g2_dfrbpq_1)
+  -0.152   20.131   library setup time
+           20.131   data required time
+-----------------------------------------------------------
+           20.131   data required time
+           -4.795   data arrival time
+-----------------------------------------------------------
+           15.336   slack (MET)
+
+

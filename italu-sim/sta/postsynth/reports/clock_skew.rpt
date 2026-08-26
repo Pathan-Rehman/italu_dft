@@ -1,0 +1,8 @@
+Clock clk
+   0.00 source latency bist_a[0]_sg13g2_dfrbpq_1_Q/CLK ^
+   0.00 target latency bist_a[0]_sg13g2_dfrbpq_1_Q/CLK ^
+   0.10 clock uncertainty
+   0.00 CRPR
+--------------
+   0.10 setup skew
+

@@ -1,0 +1,26 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0127] Reading DEF file: ../routing/routed.def
+[INFO ODB-0128] Design: tt_um_italu
+[INFO ODB-0130]     Created 45 pins.
+[INFO ODB-0131]     Created 1130 components and 6310 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2152 connections.
+[INFO ODB-0133]     Created 1144 nets and 4045 connections.
+[INFO ODB-0134] Finished DEF file: ../routing/routed.def
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[WARNING RCX-0514] The ext_model_file option is deprecated. Use set_extraction_rules_file command instead.
+[INFO RCX-0435] Reading extraction model file /foss/pdks/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation tt_um_italu (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 5831 rc segments
+[INFO RCX-0439] Coupling Cap extraction tt_um_italu ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 46% of 8710 wires extracted
+[INFO RCX-0442] 100% of 8710 wires extracted
+[INFO RCX-0045] Extract 1144 nets, 6972 rsegs, 6972 caps, 9852 ccs
+[INFO RCX-0443] 1144 nets finished
+SPEF written: routed.spef

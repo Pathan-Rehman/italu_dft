@@ -1,0 +1,3 @@
+[submodule "italu-sim"]
+	path = italu-sim
+	url = https://github.com/Pathan-Rehman/italu_dft

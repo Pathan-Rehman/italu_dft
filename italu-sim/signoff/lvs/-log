@@ -1,0 +1,5 @@
+
+Cells have no pins;  pin matching not needed.
+Device classes tt_um_italu.ext.spice and ../../routing/routed_netlist.v are equivalent.
+
+Final result: Verify:  cell ../../routing/routed_netlist.v has no elements and/or nodes.  Not checked.

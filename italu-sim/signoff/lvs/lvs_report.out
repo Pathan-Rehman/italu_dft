@@ -1,0 +1,909 @@
+
+Circuit 2 cell sg13g2_nor2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nor2_1                   |Circuit 2: sg13g2_nor2_1                   
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nor2_1 and sg13g2_nor2_1 are equivalent.
+
+Circuit 2 cell sg13g2_a21oi_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_a21oi_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_a21oi_1                  |Circuit 2: sg13g2_a21oi_1                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A2                                         |A2                                         
+A1                                         |A1                                         
+B1                                         |B1                                         
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a21oi_1 and sg13g2_a21oi_1 are equivalent.
+
+Circuit 2 cell sg13g2_xnor2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_xnor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_xnor2_1                  |Circuit 2: sg13g2_xnor2_1                  
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+B                                          |B                                          
+VDD                                        |VDD                                        
+A                                          |A                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_xnor2_1 and sg13g2_xnor2_1 are equivalent.
+
+Circuit 2 cell sg13g2_dfrbpq_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_dfrbpq_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_dfrbpq_1                 |Circuit 2: sg13g2_dfrbpq_1                 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+D                                          |D                                          
+Q                                          |Q                                          
+CLK                                        |CLK                                        
+VSS                                        |VSS                                        
+RESET_B                                    |RESET_B                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_dfrbpq_1 and sg13g2_dfrbpq_1 are equivalent.
+
+Circuit 2 cell sg13g2_or2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_or2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_or2_1                    |Circuit 2: sg13g2_or2_1                    
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VSS                                        |VSS                                        
+B                                          |B                                          
+X                                          |X                                          
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_or2_1 and sg13g2_or2_1 are equivalent.
+
+Circuit 2 cell sg13g2_o21ai_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_o21ai_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_o21ai_1                  |Circuit 2: sg13g2_o21ai_1                  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+B1                                         |B1                                         
+A2                                         |A2                                         
+A1                                         |A1                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_o21ai_1 and sg13g2_o21ai_1 are equivalent.
+
+Circuit 2 cell sg13g2_buf_4 is a black box; will not flatten Circuit 1
+Class sg13g2_buf_4 (0):  Merged 7 parallel devices.
+Warning: Equate pins:  cell sg13g2_buf_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_buf_4                    |Circuit 2: sg13g2_buf_4                    
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+A                                          |A                                          
+VSS                                        |(no matching pin)                          
+VDD                                        |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_buf_4 and sg13g2_buf_4 are equivalent.
+
+Circuit 2 cell sg13g2_nand2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nand2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nand2_1                  |Circuit 2: sg13g2_nand2_1                  
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+A                                          |A                                          
+VSS                                        |VSS                                        
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nand2_1 and sg13g2_nand2_1 are equivalent.
+
+Circuit 2 cell sg13g2_inv_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_inv_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_inv_1                    |Circuit 2: sg13g2_inv_1                    
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_inv_1 and sg13g2_inv_1 are equivalent.
+
+Circuit 2 cell sg13g2_nand2b_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nand2b_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nand2b_1                 |Circuit 2: sg13g2_nand2b_1                 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+A_N                                        |A_N                                        
+Y                                          |Y                                          
+B                                          |B                                          
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nand2b_1 and sg13g2_nand2b_1 are equivalent.
+
+Circuit 2 cell sg13g2_and2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_and2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_and2_1                   |Circuit 2: sg13g2_and2_1                   
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_and2_1 and sg13g2_and2_1 are equivalent.
+
+Circuit 2 cell sg13g2_a221oi_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_a221oi_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_a221oi_1                 |Circuit 2: sg13g2_a221oi_1                 
+-------------------------------------------|-------------------------------------------
+C1                                         |C1                                         
+Y                                          |Y                                          
+B2                                         |B2                                         
+B1                                         |B1                                         
+A2                                         |A2                                         
+VDD                                        |VDD                                        
+A1                                         |A1                                         
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a221oi_1 and sg13g2_a221oi_1 are equivalent.
+
+Circuit 2 cell sg13g2_nor2b_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nor2b_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nor2b_1                  |Circuit 2: sg13g2_nor2b_1                  
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B_N                                        |B_N                                        
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nor2b_1 and sg13g2_nor2b_1 are equivalent.
+
+Circuit 2 cell sg13g2_nor4_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nor4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nor4_1                   |Circuit 2: sg13g2_nor4_1                   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+B                                          |B                                          
+C                                          |C                                          
+Y                                          |Y                                          
+A                                          |A                                          
+D                                          |D                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nor4_1 and sg13g2_nor4_1 are equivalent.
+
+Circuit 2 cell sg13g2_a22oi_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_a22oi_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_a22oi_1                  |Circuit 2: sg13g2_a22oi_1                  
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A2                                         |A2                                         
+VDD                                        |VDD                                        
+B1                                         |B1                                         
+A1                                         |A1                                         
+VSS                                        |VSS                                        
+B2                                         |B2                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a22oi_1 and sg13g2_a22oi_1 are equivalent.
+
+Circuit 2 cell sg13g2_nand4_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nand4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nand4_1                  |Circuit 2: sg13g2_nand4_1                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+B                                          |B                                          
+C                                          |C                                          
+VSS                                        |VSS                                        
+A                                          |A                                          
+D                                          |D                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nand4_1 and sg13g2_nand4_1 are equivalent.
+
+Circuit 2 cell sg13g2_and4_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_and4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_and4_1                   |Circuit 2: sg13g2_and4_1                   
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+B                                          |B                                          
+A                                          |A                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+C                                          |C                                          
+D                                          |D                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_and4_1 and sg13g2_and4_1 are equivalent.
+
+Circuit 2 cell sg13g2_mux2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_mux2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_mux2_1                   |Circuit 2: sg13g2_mux2_1                   
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+X                                          |X                                          
+S                                          |S                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A0                                         |A0                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_mux2_1 and sg13g2_mux2_1 are equivalent.
+
+Circuit 2 cell sg13g2_nor3_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nor3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nor3_1                   |Circuit 2: sg13g2_nor3_1                   
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+B                                          |B                                          
+C                                          |C                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nor3_1 and sg13g2_nor3_1 are equivalent.
+
+Circuit 2 cell sg13g2_nand3b_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nand3b_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nand3b_1                 |Circuit 2: sg13g2_nand3b_1                 
+-------------------------------------------|-------------------------------------------
+A_N                                        |A_N                                        
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+B                                          |B                                          
+C                                          |C                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nand3b_1 and sg13g2_nand3b_1 are equivalent.
+
+Circuit 2 cell sg13g2_nand3_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_nand3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_nand3_1                  |Circuit 2: sg13g2_nand3_1                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+Y                                          |Y                                          
+B                                          |B                                          
+C                                          |C                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_nand3_1 and sg13g2_nand3_1 are equivalent.
+
+Circuit 2 cell sg13g2_a21o_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_a21o_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_a21o_1                   |Circuit 2: sg13g2_a21o_1                   
+-------------------------------------------|-------------------------------------------
+B1                                         |B1                                         
+X                                          |X                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A1                                         |A1                                         
+A2                                         |A2                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_a21o_1 and sg13g2_a21o_1 are equivalent.
+
+Circuit 2 cell sg13g2_and3_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_and3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_and3_1                   |Circuit 2: sg13g2_and3_1                   
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+B                                          |B                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+C                                          |C                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_and3_1 and sg13g2_and3_1 are equivalent.
+
+Circuit 2 cell sg13g2_xor2_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_xor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_xor2_1                   |Circuit 2: sg13g2_xor2_1                   
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+VDD                                        |VDD                                        
+B                                          |B                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_xor2_1 and sg13g2_xor2_1 are equivalent.
+
+Circuit 2 cell sg13g2_or4_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_or4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_or4_1                    |Circuit 2: sg13g2_or4_1                    
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+C                                          |C                                          
+D                                          |D                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A                                          |A                                          
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_or4_1 and sg13g2_or4_1 are equivalent.
+
+Circuit 2 cell sg13g2_or3_1 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell sg13g2_or3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13g2_or3_1                    |Circuit 2: sg13g2_or3_1                    
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+C                                          |C                                          
+B                                          |B                                          
+A                                          |A                                          
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_or3_1 and sg13g2_or3_1 are equivalent.
+
+Cell tt_um_italu (0) disconnected node: ena
+Cell tt_um_italu (0) disconnected node: ui_in[4]
+Cell tt_um_italu (0) disconnected node: ui_in[5]
+Cell tt_um_italu (0) disconnected node: uio_oe[0]
+Cell tt_um_italu (0) disconnected node: uio_oe[1]
+Cell tt_um_italu (0) disconnected node: uio_oe[2]
+Cell tt_um_italu (0) disconnected node: uio_oe[3]
+Cell tt_um_italu (0) disconnected node: uio_oe[4]
+Cell tt_um_italu (0) disconnected node: uio_oe[5]
+Cell tt_um_italu (0) disconnected node: uio_oe[6]
+Cell tt_um_italu (0) disconnected node: uio_oe[7]
+Cell tt_um_italu (1) disconnected node: ena
+Cell tt_um_italu (1) disconnected node: ui_in[5]
+Cell tt_um_italu (1) disconnected node: ui_in[4]
+Cell tt_um_italu (1) disconnected node: uio_oe[7]
+Cell tt_um_italu (1) disconnected node: uio_oe[6]
+Cell tt_um_italu (1) disconnected node: uio_oe[5]
+Cell tt_um_italu (1) disconnected node: uio_oe[4]
+Cell tt_um_italu (1) disconnected node: uio_oe[3]
+Cell tt_um_italu (1) disconnected node: uio_oe[2]
+Cell tt_um_italu (1) disconnected node: uio_oe[1]
+Cell tt_um_italu (1) disconnected node: uio_oe[0]
+Subcircuit summary:
+Circuit 1: tt_um_italu                     |Circuit 2: tt_um_italu                     
+-------------------------------------------|-------------------------------------------
+sg13g2_nor2_1 (88)                         |sg13g2_nor2_1 (88)                         
+sg13g2_a21oi_1 (102)                       |sg13g2_a21oi_1 (102)                       
+sg13g2_xnor2_1 (33)                        |sg13g2_xnor2_1 (33)                        
+sg13g2_dfrbpq_1 (165)                      |sg13g2_dfrbpq_1 (165)                      
+sg13g2_or2_1 (19)                          |sg13g2_or2_1 (19)                          
+sg13g2_o21ai_1 (117)                       |sg13g2_o21ai_1 (117)                       
+sg13g2_buf_4 (49)                          |sg13g2_buf_4 (49)                          
+sg13g2_nand2_1 (89)                        |sg13g2_nand2_1 (89)                        
+sg13g2_inv_1 (97)                          |sg13g2_inv_1 (97)                          
+sg13g2_nand2b_1 (56)                       |sg13g2_nand2b_1 (56)                       
+sg13g2_and2_1 (36)                         |sg13g2_and2_1 (36)                         
+sg13g2_a221oi_1 (47)                       |sg13g2_a221oi_1 (47)                       
+sg13g2_nor2b_1 (26)                        |sg13g2_nor2b_1 (26)                        
+sg13g2_nor4_1 (4)                          |sg13g2_nor4_1 (4)                          
+sg13g2_a22oi_1 (63)                        |sg13g2_a22oi_1 (63)                        
+sg13g2_nand4_1 (14)                        |sg13g2_nand4_1 (14)                        
+sg13g2_and4_1 (2)                          |sg13g2_and4_1 (2)                          
+sg13g2_mux2_1 (33)                         |sg13g2_mux2_1 (33)                         
+sg13g2_nor3_1 (20)                         |sg13g2_nor3_1 (20)                         
+sg13g2_nand3b_1 (3)                        |sg13g2_nand3b_1 (3)                        
+sg13g2_nand3_1 (33)                        |sg13g2_nand3_1 (33)                        
+sg13g2_a21o_1 (12)                         |sg13g2_a21o_1 (12)                         
+sg13g2_and3_1 (5)                          |sg13g2_and3_1 (5)                          
+sg13g2_xor2_1 (10)                         |sg13g2_xor2_1 (10)                         
+sg13g2_or4_1 (2)                           |sg13g2_or4_1 (2)                           
+sg13g2_or3_1 (5)                           |sg13g2_or3_1 (5)                           
+Number of devices: 1130                    |Number of devices: 1130                    
+Number of nets: 1148 **Mismatch**          |Number of nets: 1256 **Mismatch**          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: tt_um_italu                     |Circuit 2: tt_um_italu                     
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  sg13g2_dfrbpq_1/VDD = 165                |  sg13g2_dfrbpq_1/VDD = 165                
+  sg13g2_a21oi_1/VDD = 102                 |  sg13g2_a21oi_1/VDD = 102                 
+  sg13g2_nor2_1/VDD = 88                   |  sg13g2_nor2_1/VDD = 88                   
+  sg13g2_o21ai_1/VDD = 117                 |  sg13g2_o21ai_1/VDD = 117                 
+  sg13g2_inv_1/VDD = 97                    |  sg13g2_inv_1/VDD = 92                    
+  sg13g2_nand2_1/VDD = 89                  |  sg13g2_nand2_1/VDD = 89                  
+  sg13g2_mux2_1/VDD = 33                   |  sg13g2_mux2_1/VDD = 33                   
+  sg13g2_nand2b_1/VDD = 56                 |  sg13g2_nand2b_1/VDD = 56                 
+  sg13g2_a21o_1/VDD = 12                   |  sg13g2_a21o_1/VDD = 12                   
+  sg13g2_nand3_1/VDD = 33                  |  sg13g2_nand3_1/VDD = 33                  
+  sg13g2_a221oi_1/VDD = 47                 |  sg13g2_a221oi_1/VDD = 47                 
+  sg13g2_xnor2_1/VDD = 33                  |  sg13g2_xnor2_1/VDD = 33                  
+  sg13g2_nor2b_1/VDD = 26                  |  sg13g2_nor2b_1/VDD = 26                  
+  sg13g2_and2_1/VDD = 36                   |  sg13g2_and2_1/VDD = 36                   
+  sg13g2_or2_1/VDD = 19                    |  sg13g2_or2_1/VDD = 19                    
+  sg13g2_nor4_1/VDD = 4                    |  sg13g2_nor4_1/VDD = 4                    
+  sg13g2_nor3_1/VDD = 20                   |  sg13g2_nor3_1/VDD = 20                   
+  sg13g2_nand4_1/VDD = 14                  |  sg13g2_nand4_1/VDD = 14                  
+  sg13g2_and3_1/VDD = 5                    |  sg13g2_and3_1/VDD = 5                    
+  sg13g2_xor2_1/VDD = 10                   |  sg13g2_xor2_1/VDD = 10                   
+  sg13g2_a22oi_1/VDD = 63                  |  sg13g2_a22oi_1/VDD = 63                  
+  sg13g2_nand3b_1/VDD = 3                  |  sg13g2_nand3b_1/VDD = 3                  
+  sg13g2_or3_1/VDD = 5                     |  sg13g2_or3_1/VDD = 5                     
+  sg13g2_or4_1/VDD = 2                     |  sg13g2_or4_1/VDD = 2                     
+  sg13g2_and4_1/VDD = 2                    |  sg13g2_and4_1/VDD = 2                    
+  sg13g2_buf_4/VDD = 49                    |                                           
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  sg13g2_dfrbpq_1/VSS = 165                |  sg13g2_dfrbpq_1/VSS = 165                
+  sg13g2_a21oi_1/VSS = 102                 |  sg13g2_a21oi_1/VSS = 102                 
+  sg13g2_nor2_1/VSS = 88                   |  sg13g2_nor2_1/VSS = 88                   
+  sg13g2_o21ai_1/VSS = 117                 |  sg13g2_o21ai_1/VSS = 117                 
+  sg13g2_inv_1/VSS = 97                    |  sg13g2_inv_1/VSS = 92                    
+  sg13g2_nand2_1/VSS = 89                  |  sg13g2_nand2_1/VSS = 89                  
+  sg13g2_mux2_1/VSS = 33                   |  sg13g2_mux2_1/VSS = 33                   
+  sg13g2_nand2b_1/VSS = 56                 |  sg13g2_nand2b_1/VSS = 56                 
+  sg13g2_a21o_1/VSS = 12                   |  sg13g2_a21o_1/VSS = 12                   
+  sg13g2_nand3_1/VSS = 33                  |  sg13g2_nand3_1/VSS = 33                  
+  sg13g2_a221oi_1/VSS = 47                 |  sg13g2_a221oi_1/VSS = 47                 
+  sg13g2_xnor2_1/VSS = 33                  |  sg13g2_xnor2_1/VSS = 33                  
+  sg13g2_nor2b_1/VSS = 26                  |  sg13g2_nor2b_1/VSS = 26                  
+  sg13g2_and2_1/VSS = 36                   |  sg13g2_and2_1/VSS = 36                   
+  sg13g2_or2_1/VSS = 19                    |  sg13g2_or2_1/VSS = 19                    
+  sg13g2_nor4_1/VSS = 4                    |  sg13g2_nor4_1/VSS = 4                    
+  sg13g2_nor3_1/VSS = 20                   |  sg13g2_nor3_1/VSS = 20                   
+  sg13g2_nand4_1/VSS = 14                  |  sg13g2_nand4_1/VSS = 14                  
+  sg13g2_and3_1/VSS = 5                    |  sg13g2_and3_1/VSS = 5                    
+  sg13g2_xor2_1/VSS = 10                   |  sg13g2_xor2_1/VSS = 10                   
+  sg13g2_a22oi_1/VSS = 63                  |  sg13g2_a22oi_1/VSS = 63                  
+  sg13g2_nand3b_1/VSS = 3                  |  sg13g2_nand3b_1/VSS = 3                  
+  sg13g2_or3_1/VSS = 5                     |  sg13g2_or3_1/VSS = 5                     
+  sg13g2_or4_1/VSS = 2                     |  sg13g2_or4_1/VSS = 2                     
+  sg13g2_and4_1/VSS = 2                    |  sg13g2_and4_1/VSS = 2                    
+  sg13g2_buf_4/VSS = 49                    |                                           
+                                           |                                           
+(no matching net)                          |Net: _noconnect_7_                         
+                                           |  sg13g2_inv_1/VDD = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_10_                        
+                                           |  sg13g2_inv_1/VDD = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_13_                        
+                                           |  sg13g2_inv_1/VDD = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_3_                         
+                                           |  sg13g2_inv_1/VSS = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_6_                         
+                                           |  sg13g2_inv_1/VSS = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_9_                         
+                                           |  sg13g2_inv_1/VSS = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_12_                        
+                                           |  sg13g2_inv_1/VSS = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_15_                        
+                                           |  sg13g2_inv_1/VSS = 1                     
+                                           |                                           
+(no matching net)                          |Net: dummy_1159                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1160                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1161                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1167                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1177                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1181                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1189                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1163                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1165                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1169                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1171                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1173                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1175                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1179                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1183                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1185                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1187                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1191                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1162                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1168                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1178                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1182                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1190                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1164                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1166                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1170                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1172                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1174                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1176                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1180                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1184                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1186                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1188                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1192                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1193                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1207                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1209                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1215                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1225                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1227                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1245                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1247                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1253                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1255                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1194                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1208                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1210                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1216                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1226                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1228                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1246                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1248                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1254                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1256                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1195                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1223                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1229                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1197                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1199                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1201                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1203                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1205                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1211                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1213                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1235                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1217                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1219                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1221                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1231                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1233                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1237                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1239                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1241                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1243                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1249                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1251                            
+                                           |  sg13g2_buf_4/proxyVSS = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1196                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1224                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1230                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1198                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1200                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1202                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1204                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1206                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1212                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1214                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1236                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1218                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1220                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1222                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1232                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1234                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1238                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1240                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1242                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1244                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1250                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: dummy_1252                            
+                                           |  sg13g2_buf_4/proxyVDD = 1                
+                                           |                                           
+(no matching net)                          |Net: _noconnect_4_                         
+                                           |  sg13g2_inv_1/VDD = 1                     
+                                           |                                           
+(no matching net)                          |Net: _noconnect_1_                         
+                                           |  sg13g2_inv_1/VDD = 1                     
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: tt_um_italu                     |Circuit 2: tt_um_italu                     
+-------------------------------------------|-------------------------------------------
+VDD                                        |(no pin, node is _noconnect_1_)            
+VSS                                        |(no pin, node is _noconnect_4_)            
+uio_out[7]                                 |uio_out[7]                                 
+uio_out[3]                                 |uio_out[3]                                 
+uio_out[2]                                 |uio_out[2]                                 
+uio_out[1]                                 |uio_out[1]                                 
+uio_out[0]                                 |uio_out[0]                                 
+uio_out[6]                                 |uio_out[6]                                 
+uio_out[5]                                 |uio_out[5]                                 
+uio_out[4]                                 |uio_out[4]                                 
+clk                                        |clk                                        
+ui_in[0]                                   |ui_in[0]                                   
+uio_in[1]                                  |uio_in[1]                                  
+ui_in[1]                                   |ui_in[1]                                   
+uio_in[0]                                  |uio_in[0]                                  
+uio_in[6]                                  |uio_in[6]                                  
+uio_in[7]                                  |uio_in[7]                                  
+ui_in[7]                                   |ui_in[7]                                   
+ui_in[6]                                   |ui_in[6]                                   
+rst_n                                      |rst_n                                      
+uio_in[3]                                  |uio_in[3]                                  
+uio_in[4]                                  |uio_in[4]                                  
+uio_in[2]                                  |uio_in[2]                                  
+uio_in[5]                                  |uio_in[5]                                  
+uo_out[7]                                  |uo_out[7]                                  
+ui_in[2]                                   |ui_in[2]                                   
+ui_in[3]                                   |ui_in[3]                                   
+uo_out[1]                                  |uo_out[1]                                  
+uo_out[0]                                  |uo_out[0]                                  
+uo_out[3]                                  |uo_out[3]                                  
+uo_out[5]                                  |uo_out[5]                                  
+uo_out[2]                                  |uo_out[2]                                  
+uo_out[4]                                  |uo_out[4]                                  
+uo_out[6]                                  |uo_out[6]                                  
+ena                                        |ena                                        
+ui_in[4]                                   |ui_in[4]                                   
+ui_in[5]                                   |ui_in[5]                                   
+uio_oe[0]                                  |uio_oe[0]                                  
+uio_oe[1]                                  |uio_oe[1]                                  
+uio_oe[2]                                  |uio_oe[2]                                  
+uio_oe[3]                                  |uio_oe[3]                                  
+uio_oe[4]                                  |uio_oe[4]                                  
+uio_oe[5]                                  |uio_oe[5]                                  
+uio_oe[6]                                  |uio_oe[6]                                  
+uio_oe[7]                                  |uio_oe[7]                                  
+(no pin, node is VSS)                      |VDD                                        
+(no pin, node is VSS)                      |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for tt_um_italu and tt_um_italu altered to match.
+Device classes tt_um_italu and tt_um_italu are equivalent.
+
+Final result: Top level cell failed pin matching.
